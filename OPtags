@@ -1,0 +1,230 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACCESS_TOKEN	C:\Users\misterdom\evrythng-openpicus\taskFlyport.c	/^char ACCESS_TOKEN[] = "InCChEsfCIrbM4pwkEi31jipNSK1y95HKoTwiaNlIkrVqgUiVKlr293nggUT1i0fiWSyKjUeczaNPV7X";$/;"	kind:v	line:6
+AN1	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\basicdevices.h	64;"	kind:d	line:64
+AN2	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\basicdevices.h	65;"	kind:d	line:65
+AN3	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\basicdevices.h	66;"	kind:d	line:66
+AN_PORTS	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveboard.h	59;"	kind:d	line:59
+AN_TYPE	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	60;"	kind:d	line:60
+An_Temp	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_temp.c	/^const void *An_Temp = &_An_Temp;$/;"	kind:v	line:107
+An_Temp	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_temp.c	/^struct An_Temp$/;"	kind:s	line:56	file:
+An_Temp_attach	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_temp.c	/^static void *An_Temp_attach (void * _board,void *_sensor,int portnumb)$/;"	kind:f	line:79	file:
+An_Temp_ctor	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_temp.c	/^static void *An_Temp_ctor (void * _self, va_list *app)$/;"	kind:f	line:62	file:
+An_Temp_dtor	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_temp.c	/^static void An_Temp_dtor (void * _sensor)$/;"	kind:f	line:69	file:
+An_Temp_get	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_temp.c	/^static float An_Temp_get (void * _self,va_list *app)$/;"	kind:f	line:87	file:
+An_i	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_in.c	/^const void *An_i = &_An_i;$/;"	kind:v	line:105
+An_i	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_in.c	/^struct An_i$/;"	kind:s	line:55	file:
+An_i_attach	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_in.c	/^static void *An_i_attach (void * _board,void *_sensor,int portnumb)$/;"	kind:f	line:78	file:
+An_i_ctor	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_in.c	/^static void *An_i_ctor (void * _self, va_list *app)$/;"	kind:f	line:61	file:
+An_i_dtor	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_in.c	/^static void An_i_dtor (void * _sensor)$/;"	kind:f	line:68	file:
+An_i_getan_i	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_in.c	/^static float An_i_getan_i (void * _self,va_list *app)$/;"	kind:f	line:87	file:
+BASICDEVICES_H	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\basicdevices.h	50;"	kind:d	line:50
+BOTH_SHARED	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	72;"	kind:d	line:72
+Board	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^const void *Board = &_Board;$/;"	kind:v	line:335
+Board	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^struct Board$/;"	kind:s	line:78	file:
+BoardClass	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^struct BoardClass$/;"	kind:s	line:78
+Board_ctor	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^static void *Board_ctor (void * _self, va_list *app)$/;"	kind:f	line:95	file:
+D3VR_TYPE	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	56;"	kind:d	line:56
+D3V_TYPE	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	57;"	kind:d	line:57
+D5VR_TYPE	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	58;"	kind:d	line:58
+D5V_TYPE	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	59;"	kind:d	line:59
+DEBUG_PORTS	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveboard.h	61;"	kind:d	line:61
+DIG1	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\basicdevices.h	60;"	kind:d	line:60
+DIG2	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\basicdevices.h	61;"	kind:d	line:61
+DIG3	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\basicdevices.h	62;"	kind:d	line:62
+DIG4	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\basicdevices.h	63;"	kind:d	line:63
+DIG_PORTS	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveboard.h	62;"	kind:d	line:62
+DOUBLE_PORT	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	66;"	kind:d	line:66
+DUTY	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\basicdevices.h	73;"	kind:d	line:73
+Dig_io	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^const void *Dig_io = &_Dig_io;$/;"	kind:v	line:166
+Dig_io	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^struct Dig_io$/;"	kind:s	line:55	file:
+Dig_io_attach	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^static void* Dig_io_attach (void * _board,void *_sensor,int n)$/;"	kind:f	line:107	file:
+Dig_io_ctor	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^static void *Dig_io_ctor (void * _self, va_list *app)$/;"	kind:f	line:66	file:
+Dig_io_dtor	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^static void Dig_io_dtor (void * _sensor)$/;"	kind:f	line:91	file:
+Dig_io_get_dig_io	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^static float Dig_io_get_dig_io (void * _self,va_list *app)$/;"	kind:f	line:148	file:
+Dig_io_set_dig_io	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^static int Dig_io_set_dig_io (void * _self,va_list *app)$/;"	kind:f	line:118	file:
+ERR_PORT_ALREADY_USED	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	77;"	kind:d	line:77
+ERR_WRONG_PORTNUM	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	76;"	kind:d	line:76
+ERR_WRONG_PORT_TYPE	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	78;"	kind:d	line:78
+FREQUENCY	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\basicdevices.h	72;"	kind:d	line:72
+FlyportTask	C:\Users\misterdom\evrythng-openpicus\taskFlyport.c	/^void FlyportTask()$/;"	kind:f	line:59
+GROVEBOARD_H	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveboard.h	50;"	kind:d	line:50
+GROVEINTERFACES_H	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	50;"	kind:d	line:50
+GROVELIB_H	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	49;"	kind:d	line:49
+GroveNest	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveboard.h	55;"	kind:d	line:55
+GrovePort	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	/^}GrovePort;$/;"	kind:t	line:92	typeref:struct:__anon1
+GroveStarted	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^BOOL GroveStarted = FALSE;$/;"	kind:v	line:92
+I2C	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\basicdevices.h	67;"	kind:d	line:67
+I2C_PORTS	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveboard.h	60;"	kind:d	line:60
+I2C_TYPE	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	61;"	kind:d	line:61
+INIT_CORRECT	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	75;"	kind:d	line:75
+Interface	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveboard.h	/^struct Interface$/;"	kind:s	line:65
+LenTOT	C:\Users\misterdom\evrythng-openpicus\taskFlyport.c	/^	int LenTOT=0;$/;"	kind:l	line:18
+NOT_SHARED	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	69;"	kind:d	line:69
+NOT_USED	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	64;"	kind:d	line:64
+OnConnectionFailed	C:\Users\misterdom\evrythng-openpicus\WF_Events.c	/^void OnConnectionFailed(UINT8 ev, UINT16 evinfo)$/;"	kind:f	line:16
+OnConnectionPermLost	C:\Users\misterdom\evrythng-openpicus\WF_Events.c	/^void OnConnectionPermLost(UINT8 ev, UINT16 evinfo)$/;"	kind:f	line:34
+OnConnectionReestablished	C:\Users\misterdom\evrythng-openpicus\WF_Events.c	/^void OnConnectionReestablished(UINT8 ev, UINT16 evinfo)$/;"	kind:f	line:28
+OnConnectionSuccessful	C:\Users\misterdom\evrythng-openpicus\WF_Events.c	/^void OnConnectionSuccessful(UINT8 ev, UINT16 evinfo)$/;"	kind:f	line:9
+OnConnectionTempLost	C:\Users\misterdom\evrythng-openpicus\WF_Events.c	/^void OnConnectionTempLost(UINT8 ev, UINT16 evinfo)$/;"	kind:f	line:22
+OnScanResult	C:\Users\misterdom\evrythng-openpicus\WF_Events.c	/^void OnScanResult(UINT8 ev, UINT16 evinfo)$/;"	kind:f	line:41
+P1_SHARED	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	70;"	kind:d	line:70
+P2_SHARED	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	71;"	kind:d	line:71
+PWM	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\basicdevices.h	71;"	kind:d	line:71
+Pin1	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	/^	BYTE Pin1;			\/\/ 	Pin1 number - Association with Flyport pin number (analog channel for analog ports)$/;"	kind:m	line:87	struct:__anon1	access:public
+Pin2	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	/^	BYTE Pin2;			\/\/	Pin2 number - Association with Flyport pin number (analog channel for analog ports)$/;"	kind:m	line:88	struct:__anon1	access:public
+RxLen	C:\Users\misterdom\evrythng-openpicus\taskFlyport.c	/^	int RxLen=0;$/;"	kind:l	line:17
+SINGLE_PORT	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	65;"	kind:d	line:65
+SPI	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\basicdevices.h	68;"	kind:d	line:68
+ScanCompleted	C:\Users\misterdom\evrythng-openpicus\WF_Events.c	/^BOOL ScanCompleted = FALSE;$/;"	kind:v	line:7
+SensorClass	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^struct SensorClass$/;"	kind:s	line:67
+TIMEOUT	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\basicdevices.h	75;"	kind:d	line:75
+Type	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	/^	BYTE Type;			\/\/	Port type - Type of the port, as in the upper defines$/;"	kind:m	line:90	struct:__anon1	access:public
+Use	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	/^	BYTE Use;			\/\/	Port usage - Indicates if it's used as single or double sensor, or not used$/;"	kind:m	line:89	struct:__anon1	access:public
+_An_Temp	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_temp.c	/^static const struct SensorClass _An_Temp =$/;"	kind:v	line:96	typeref:struct:SensorClass	file:
+_An_i	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_in.c	/^static const struct SensorClass _An_i =$/;"	kind:v	line:94	typeref:struct:SensorClass	file:
+_Board	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^static const struct BoardClass _Board =$/;"	kind:v	line:327	typeref:struct:BoardClass	file:
+_Dig_io	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^static const struct SensorClass _Dig_io =$/;"	kind:v	line:155	typeref:struct:SensorClass	file:
+aninext	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^	struct Interface *aninext;$/;"	kind:m	line:87	struct:Board	typeref:struct:Board::Interface	file:	access:public
+anistart	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^	struct Interface *anistart;$/;"	kind:m	line:86	struct:Board	typeref:struct:Board::Interface	file:	access:public
+ap	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^	va_list ap;$/;"	kind:l	line:114
+ap	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^	va_list ap;$/;"	kind:l	line:126
+ap	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^	va_list ap;$/;"	kind:l	line:136
+ap	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^	va_list ap;$/;"	kind:l	line:65
+attach	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^	int (*attach)  (void *,void *,int,int);$/;"	kind:m	line:83	struct:BoardClass	access:public
+attach	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^	void *(*attach) (void *,void *,int);$/;"	kind:m	line:72	struct:SensorClass	access:public
+attachSensorToAnBus	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_in.c	/^struct Interface *	attachSensorToAnBus (void *,int);$/;"	kind:p	line:53	file:
+attachSensorToAnBus	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_temp.c	/^struct Interface *	attachSensorToAnBus (void *,int);$/;"	kind:p	line:54	file:
+attachSensorToAnBus	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^struct Interface *	attachSensorToAnBus (void *_board,int n)$/;"	kind:f	line:226
+attachSensorToDigioBus	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^struct Interface *attachSensorToDigioBus(void *,int,int);$/;"	kind:p	line:53	file:
+attachSensorToDigioBus	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^struct Interface *attachSensorToDigioBus(void *_board,int n,int type)$/;"	kind:f	line:168
+attachSensorToI2CBus	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^struct Interface *attachSensorToI2CBus(void *_board,int i2cbus,int add)$/;"	kind:f	line:130
+attachSensorToUartBus	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^struct Interface *attachSensorToUartBus(void *_board,int port,int speed,BYTE module,BYTE interf)$/;"	kind:f	line:273
+attachToBoard	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^int attachToBoard(void *,void *,int);$/;"	kind:p	line:61
+attachToBoard	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^int attachToBoard(void *board,void *sensor,int numb)$/;"	kind:f	line:97
+bff	C:\Users\misterdom\evrythng-openpicus\taskFlyport.c	/^	char bff[250];$/;"	kind:l	line:16
+board	C:\Users\misterdom\evrythng-openpicus\taskFlyport.c	/^	void *board = new (GroveNest);$/;"	kind:l	line:69
+boardType	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^	int boardType;$/;"	kind:m	line:81	struct:Board	file:	access:public
+buf	C:\Users\misterdom\evrythng-openpicus\WF_Events.c	/^	char buf[8];$/;"	kind:l	line:44
+class	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_in.c	/^	const void *class;$/;"	kind:m	line:57	struct:An_i	file:	access:public
+class	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_temp.c	/^	const void *class;$/;"	kind:m	line:58	struct:An_Temp	file:	access:public
+class	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^	const void *class;$/;"	kind:m	line:57	struct:Dig_io	file:	access:public
+class	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^	const void *class;$/;"	kind:m	line:80	struct:Board	file:	access:public
+class	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^	const struct BoardClass *class = _class;$/;"	kind:l	line:161
+class	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^	const struct SensorClass *class = _class;$/;"	kind:l	line:183
+cnt	C:\Users\misterdom\evrythng-openpicus\taskFlyport.c	/^	int cnt = 0;$/;"	kind:l	line:13
+config	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^	int (*config) (void *,va_list *);$/;"	kind:m	line:73	struct:SensorClass	access:public
+configure	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^int configure(void *,...);$/;"	kind:p	line:62
+configure	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^int configure(void *self, ...)$/;"	kind:f	line:112
+cp	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^	const struct SensorClass **cp = self;$/;"	kind:l	line:116
+cp	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^	const struct SensorClass **cp = self;$/;"	kind:l	line:128
+cp	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^	const struct SensorClass **cp = self;$/;"	kind:l	line:138
+ctor	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^	void *(*ctor) (void *,va_list *);$/;"	kind:m	line:70	struct:SensorClass	access:public
+ctor	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^	void *(*ctor) (void *,va_list *);$/;"	kind:m	line:81	struct:BoardClass	access:public
+data	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^			float data = va_arg(*app, const float);$/;"	kind:l	line:135
+data	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\i2c_devices.c	/^	BYTE data = I2CRead(1);$/;"	kind:l	line:75
+delet_	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^void delet_(void **);$/;"	kind:p	line:60
+delet_	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^void delet_(void **_self)$/;"	kind:f	line:91
+delete	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	56;"	kind:d	line:56
+delete_	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^void delete_(void *);$/;"	kind:p	line:59
+delete_	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^void delete_(void *_self)$/;"	kind:f	line:81
+dionext	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^	struct Interface *dionext;$/;"	kind:m	line:85	struct:Board	typeref:struct:Board::Interface	file:	access:public
+diostart	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^	struct Interface *diostart;$/;"	kind:m	line:84	struct:Board	typeref:struct:Board::Interface	file:	access:public
+dtor	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^	void (*dtor) (void *);$/;"	kind:m	line:71	struct:SensorClass	access:public
+dtor	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^	void *(*dtor) (void *);$/;"	kind:m	line:82	struct:BoardClass	access:public
+dtor	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^		(*self)->dtor(self);$/;"	kind:p	line:86	file:
+flag	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^unsigned char flag;$/;"	kind:v	line:60
+flagErr	C:\Users\misterdom\evrythng-openpicus\taskFlyport.c	/^	BOOL flagErr = FALSE;$/;"	kind:l	line:14
+gName	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^	char *(*gName) (const void *);$/;"	kind:m	line:85	struct:BoardClass	access:public
+g_I2CSCL	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^BYTE g_I2CSCL[] = { p1 };$/;"	kind:v	line:70
+g_I2CSDA	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^BYTE g_I2CSDA[] ={ p3 }; $/;"	kind:v	line:71
+g_MISO	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^BYTE g_MISO[] ={ p7}; $/;"	kind:v	line:66
+g_MOSI	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^BYTE g_MOSI[] = { p17 };$/;"	kind:v	line:67
+g_SCK	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^BYTE g_SCK[] = { p18 }; $/;"	kind:v	line:65
+g_SPI_CS	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^BYTE g_SPI_CS[] ={ p8 }; $/;"	kind:v	line:68
+g_an	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^BYTE g_an[] ={ 1, 2, 3 }; $/;"	kind:v	line:73
+g_ashared	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^BYTE g_ashared[] = { NOT_SHARED, NOT_SHARED, NOT_SHARED, NOT_SHARED};$/;"	kind:v	line:75
+g_atype	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^BYTE g_atype[] = {AN_TYPE, AN_TYPE, AN_TYPE, AN_TYPE};$/;"	kind:v	line:74
+g_d1	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^BYTE g_d1[] = { p2, p5, p10, p12};$/;"	kind:v	line:60
+g_d2	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^BYTE g_d2[] = { p4, p6, p11, p14};	$/;"	kind:v	line:61
+g_dshared	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^BYTE g_dshared[] = { NOT_SHARED, NOT_SHARED, NOT_SHARED, NOT_SHARED, NOT_SHARED, NOT_SHARED};$/;"	kind:v	line:63
+g_dtype	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^BYTE g_dtype[] = { D5VR_TYPE, D5VR_TYPE, D5VR_TYPE, D5VR_TYPE, D5VR_TYPE, D3VR_TYPE};$/;"	kind:v	line:62
+get	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^float get(void *, ...);$/;"	kind:p	line:64
+get	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^float get(void *self, ...)$/;"	kind:f	line:134
+get_	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^	float (*get_)(void *,va_list *);$/;"	kind:m	line:75	struct:SensorClass	access:public
+i2cnext	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^	struct Interface *i2cnext;$/;"	kind:m	line:83	struct:Board	typeref:struct:Board::Interface	file:	access:public
+i2cstart	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^	struct Interface *i2cstart;$/;"	kind:m	line:82	struct:Board	typeref:struct:Board::Interface	file:	access:public
+inter	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_in.c	/^	struct Interface *inter;$/;"	kind:m	line:58	struct:An_i	typeref:struct:An_i::Interface	file:	access:public
+inter	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_temp.c	/^	struct Interface *inter;$/;"	kind:m	line:59	struct:An_Temp	typeref:struct:An_Temp::Interface	file:	access:public
+inter	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^	struct Interface *inter;$/;"	kind:m	line:58	struct:Dig_io	typeref:struct:Dig_io::Interface	file:	access:public
+isShared	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveinterfaces.h	/^	BYTE isShared;		\/\/	Pin sharing - Indicates if the pins of the ports are shared with other ports, like in Arduino UNO Grove shield$/;"	kind:m	line:91	struct:__anon1	access:public
+lightSensor	C:\Users\misterdom\evrythng-openpicus\taskFlyport.c	/^	void *lightSensor = new (An_i);$/;"	kind:l	line:73
+msg	C:\Users\misterdom\evrythng-openpicus\taskFlyport.c	/^	char msg[1500];$/;"	kind:l	line:12
+new	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^void *new(const void *_class, ...)$/;"	kind:f	line:63
+new_board	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^static void *new_board(const void *,va_list ap);$/;"	kind:p	line:58	file:
+new_board	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^static void *new_board(const void *_class,va_list ap)$/;"	kind:f	line:159	file:
+new_sensor	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^static void *new_sensor(const void *,va_list ap);$/;"	kind:p	line:57	file:
+new_sensor	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^static void *new_sensor(const void *_class,va_list ap)$/;"	kind:f	line:181	file:
+next	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveboard.h	/^	struct Interface *next;$/;"	kind:m	line:69	struct:Interface	typeref:struct:Interface::Interface	access:public
+p	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^	struct Interface *p;$/;"	kind:l	line:133
+p	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^	struct Interface *p;$/;"	kind:l	line:171
+p	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^	struct Interface *p;$/;"	kind:l	line:229
+p	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^	struct Interface *p;$/;"	kind:l	line:276
+p	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^	void *p = calloc(1, class->size);$/;"	kind:l	line:162
+p	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^	void *p = calloc(1, class->size);$/;"	kind:l	line:184
+payloadLight	C:\Users\misterdom\evrythng-openpicus\taskFlyport.c	/^	char payloadLight[100];$/;"	kind:l	line:88
+payloadTemp	C:\Users\misterdom\evrythng-openpicus\taskFlyport.c	/^	char payloadTemp[100];$/;"	kind:l	line:87
+port	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveboard.h	/^	GrovePort *port;$/;"	kind:m	line:68	struct:Interface	access:public
+propertyLight	C:\Users\misterdom\evrythng-openpicus\taskFlyport.c	/^	const char* propertyLight = "output";$/;"	kind:l	line:62
+propertyTemp	C:\Users\misterdom\evrythng-openpicus\taskFlyport.c	/^	const char* propertyTemp = "temperature";$/;"	kind:l	line:63
+pwm_duty	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^	float* pwm_duty;$/;"	kind:m	line:62	struct:Dig_io	file:	access:public
+pwm_frequency	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^	float* pwm_frequency;$/;"	kind:m	line:61	struct:Dig_io	file:	access:public
+pwm_num	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^	BYTE pwm_num;$/;"	kind:m	line:60	struct:Dig_io	file:	access:public
+readError	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^unsigned char readError(void);$/;"	kind:p	line:65
+readError	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^unsigned char readError(void)$/;"	kind:f	line:152
+read_register	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\i2c_devices.c	/^BYTE read_register(BYTE address,BYTE regist)$/;"	kind:f	line:68
+resistance	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_temp.c	/^	float resistance=(float)(1023-ret)*10000\/ret; $/;"	kind:l	line:91
+ret	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_in.c	/^	int ret = ADCVal(self->inter->port->Pin1);$/;"	kind:l	line:90
+ret	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_temp.c	/^	unsigned int ret = ADCVal(self->inter->port->Pin1);$/;"	kind:l	line:90
+ret	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^	int ret = IOGet(self->inter->port->Pin1);$/;"	kind:l	line:151
+self	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_in.c	/^	struct An_i *self = _self;$/;"	kind:l	line:63
+self	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_in.c	/^	struct An_i *self = _self;$/;"	kind:l	line:89
+self	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_temp.c	/^	struct An_Temp *self = _self;$/;"	kind:l	line:64
+self	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_temp.c	/^	struct An_Temp *self = _self;$/;"	kind:l	line:89
+self	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^	struct Dig_io *self = _self;$/;"	kind:l	line:120
+self	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^	struct Dig_io *self = _self;$/;"	kind:l	line:150
+self	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^	struct Dig_io *self = _self;$/;"	kind:l	line:68
+self	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^	struct Board *self = _board;$/;"	kind:l	line:132
+self	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^	struct Board *self = _board;$/;"	kind:l	line:170
+self	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^	struct Board *self = _board;$/;"	kind:l	line:228
+self	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^	struct Board *self = _board;$/;"	kind:l	line:275
+self	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^	struct Board *self = _self;$/;"	kind:l	line:119
+self	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^	struct SensorClass **self = _self;$/;"	kind:l	line:83
+sen	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^	const struct SensorClass **sen = sensor;$/;"	kind:l	line:100
+sensor	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_in.c	/^	struct An_i *sensor = _sensor;$/;"	kind:l	line:70
+sensor	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_in.c	/^	struct An_i *sensor = _sensor;$/;"	kind:l	line:80
+sensor	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_temp.c	/^	struct An_Temp *sensor = _sensor;$/;"	kind:l	line:71
+sensor	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_temp.c	/^	struct An_Temp *sensor = _sensor;$/;"	kind:l	line:81
+sensor	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^	struct Dig_io *sensor = _sensor;$/;"	kind:l	line:109
+sensor	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^	struct Dig_io *sensor = _sensor;$/;"	kind:l	line:93
+set	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^int set(void *,...);$/;"	kind:p	line:63
+set	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\grovelib.c	/^int set(void *self,...)$/;"	kind:f	line:124
+set_	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^	int (*set_)(void *,va_list *);$/;"	kind:m	line:74	struct:SensorClass	access:public
+set_register	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\i2c_devices.c	/^int set_register(BYTE address,BYTE regist, BYTE data)$/;"	kind:f	line:51
+size	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^	size_t size; $/;"	kind:m	line:69	struct:SensorClass	access:public
+size	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^	size_t size; $/;"	kind:m	line:80	struct:BoardClass	access:public
+sock	C:\Users\misterdom\evrythng-openpicus\taskFlyport.c	/^	TCP_SOCKET sock = INVALID_SOCKET;$/;"	kind:l	line:11
+speed	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\groveboard.h	/^	int speed;$/;"	kind:m	line:70	struct:Interface	access:public
+start	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\Include\grovelib.h	/^	void (*start) (const void *);$/;"	kind:m	line:84	struct:BoardClass	access:public
+state	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^	BYTE state = va_arg(*app, const BYTE);$/;"	kind:l	line:121
+tempAn	C:\Users\misterdom\evrythng-openpicus\taskFlyport.c	/^	void *tempAn = new(An_Temp);$/;"	kind:l	line:76
+temperature	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\analog_temp.c	/^	float temperature=1\/(log(resistance\/10000)\/3975+1\/298.15)-273.15;$/;"	kind:l	line:92
+thngId	C:\Users\misterdom\evrythng-openpicus\taskFlyport.c	/^	const char* thngId = "5368ee7ce4b0eec2cc7a41d8";$/;"	kind:l	line:64
+type	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\digital_io.c	/^	BYTE type;$/;"	kind:m	line:59	struct:Dig_io	file:	access:public
+uartnext	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^	struct Interface *uartnext;$/;"	kind:m	line:89	struct:Board	typeref:struct:Board::Interface	file:	access:public
+uartstart	C:\Users\misterdom\evrythng-openpicus\Libs\ExternalLib\groveboard.c	/^	struct Interface *uartstart;$/;"	kind:m	line:88	struct:Board	typeref:struct:Board::Interface	file:	access:public
+writeProperty	C:\Users\misterdom\evrythng-openpicus\taskFlyport.c	/^void writeProperty(char * payload, char * propertyName, char* thngId)$/;"	kind:f	line:8
