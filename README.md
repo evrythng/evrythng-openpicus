@@ -1,7 +1,7 @@
 Sample code for the EVRYTHNG - OpenPicus Flyport integration.
 =============================================================
 
-A sample code to update EVRYTHNG properties from an OpenPicus Flyport over HTTP.
+A sample code to update [EVRYTHNG](https://dev.evrythng.com) Properties from an OpenPicus Flyport over HTTP.
 
 To make it work just edit the following in `taskflyport.c`:
 
