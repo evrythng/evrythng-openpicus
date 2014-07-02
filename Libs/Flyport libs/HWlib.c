@@ -78,7 +78,13 @@ void _dbgwrite(char* dbgstr)
 /*****************************************************************************
  *						--- PORT REGISTER MAPPING ---					 	 *
  ****************************************************************************/	
-#define IOPINS	(10)
+#if defined FLYPORT
+#define IOPINS  (26) // from 0 to 25 (p26 is MCLR and is not used)
+#elif defined FLYPORTETH
+#define IOPINS	(35) // from 0 to 35 (p34 is the higher pin number available)
+#elif defined FLYPORTGPRS
+#efine IOPINS (35)
+#endif
 
 extern int *LATs[];	
 extern int *TRISs[];	
@@ -131,7 +137,7 @@ extern int *AD1CSL;
 #endif				
 static int bufind_w[4];
 static int bufind_r[4];
-static int Status[26];
+static int Status[IOPINS];
 static char* UartBuffers[UART_PORTS];
 static int	 UartSize[UART_PORTS];
 

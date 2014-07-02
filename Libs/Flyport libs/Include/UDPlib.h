@@ -54,12 +54,20 @@
 
 #include "ARPlib.h"
 
+
+
 #define MAX_UDP_SOCKETS_FREERTOS (1u)
 
+
+
 #define BUFFER_UDP_FIXED_LEN 50
+
 #define BUFFER1_UDP_LEN 200
+
 #define BUFFER2_UDP_LEN BUFFER_UDP_FIXED_LEN
+
 #define BUFFER3_UDP_LEN BUFFER_UDP_FIXED_LEN
+
 #define BUFFER4_UDP_LEN BUFFER_UDP_FIXED_LEN
 
 //UDP variables:
