@@ -3,7 +3,7 @@
 #include "analog_temp.h"
 
 // EVRYTHNG Operator API Token
-char ACCESS_TOKEN[] = "YOUR_OPERATOR_EVRYTHNG_API_KEY_HERE";
+char ACCESS_TOKEN[] = "OPERATOR KEY GOES HERE";
 
 void writeProperty(char * payload, char * propertyName, char* thngId)
 {
@@ -12,15 +12,15 @@ void writeProperty(char * payload, char * propertyName, char* thngId)
 	char msg[1500];
 	int cnt = 0;
 	BOOL flagErr = FALSE;
-	
+		
 	char bff[250];
 	int RxLen=0;
 	int LenTOT=0;
 
 	sock = TCPClientOpen("api.evrythng.com","80");
-	 
+	
 	while(!TCPisConn(sock))
-	{
+	{		
 		if(cnt==10)
 		{
 			flagErr = TRUE;
@@ -28,7 +28,7 @@ void writeProperty(char * payload, char * propertyName, char* thngId)
 		}
 		vTaskDelay(50);
 		cnt++;
-  }
+	}
  
 	if(flagErr)
 	{

@@ -84,7 +84,7 @@
 //#define STACK_USE_GENERIC_TCP_SERVER_EXAMPLE	// ToUpper server example in GenericTCPServer.c
 //#define STACK_USE_TELNET_SERVER			// Telnet server
 //#define STACK_USE_ANNOUNCE				// Microchip Embedded Ethernet Device Discoverer server/client
-//#define STACK_USE_DNS					// Domain Name Service Client for resolving hostname strings to IP addresses
+#define STACK_USE_DNS					// Domain Name Service Client for resolving hostname strings to IP addresses
 //#define STACK_USE_DNS_SERVER			// Domain Name Service Server for redirection to the local device
 //#define STACK_USE_NBNS					// NetBIOS Name Service Server for repsonding to NBNS hostname broadcast queries
 //#define STACK_USE_REBOOT_SERVER			// Module for resetting this PIC remotely.  Primarily useful for a Bootloader.
@@ -302,7 +302,7 @@
  *   Define the maximum number of available UDP Sockets, and whether
  *   or not to include a checksum on packets being transmitted.
  */
-#define MAX_UDP_SOCKETS     (2u)
+#define MAX_UDP_SOCKETS     (3u)
 //#define UDP_USE_TX_CHECKSUM		// This slows UDP TX performance by nearly 50%, except when using the ENCX24J600, which has a super fast DMA and incurs virtually no speed pentalty.
 
 
