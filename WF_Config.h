@@ -95,7 +95,7 @@ extern int _WFStat;
 /*--------------------------------------------*/
 /* Default settings for Connection Management */
 /*--------------------------------------------*/
-#define MY_DEFAULT_SSID_NAME                "EVRYTHNG"
+#define MY_DEFAULT_SSID_NAME                "evrythng-mobile-wifi"
 
 #define MY_DEFAULT_NETWORK_TYPE             WF_INFRASTRUCTURE   /* WF_INFRASTRUCTURE WF_SOFT_AP or WF_ADHOC     */
 
@@ -115,7 +115,7 @@ extern int _WFStat;
 
 #define MY_DEFAULT_PS_POLL                   WF_DISABLED         /* WF_DISABLED or WF_ENABLED */
 
-#define MY_DEFAULT_WIFI_SECURITY_MODE        WF_SECURITY_WPA2_WITH_PASS_PHRASE
+#define MY_DEFAULT_WIFI_SECURITY_MODE        WF_SECURITY_WPA_WITH_PASS_PHRASE
 
 
 /*****************************************************************************/
@@ -144,7 +144,7 @@ extern int _WFStat;
 // "Microchip 802.11 Secret PSK Password".
 // The tool at http://www.wireshark.org/tools/wpa-psk.html can be used to generate this field.
 
-#define MY_DEFAULT_PSK_PHRASE               "connectEVRYTHNG"
+#define MY_DEFAULT_PSK_PHRASE               "evrywifi"
 
 #define MY_DEFAULT_PSK "\
 \x00\x00\x00\x00\x00\x00\x00\x00\
