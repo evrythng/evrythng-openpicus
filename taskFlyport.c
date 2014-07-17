@@ -1,61 +1,55 @@
 #include "taskFlyport.h"
 #include "evrythng.h"
+#include "timestamp.h"
 
 #include <stdio.h>
 #include <string.h>
+#include <time.h>
 
-void testEvtGetPropertyValue()
-{
-	const char* apiKey = "InCChEsfCIrbM4pwkEi31jipNSK1y95HKoTwiaNlIkrVqgUiVKlr293nggUT1i0fiWSyKjUeczaNPV7X";
-	const char* thngId = "5368ee7ce4b0eec2cc7a41d8";
-	const char* propertyName = "output";
+#define API_KEY "rHzsaxMsshF1Di5MwSo2BLRNM0jS0J1iZkKbZuwbBbWjVisLGSLnyRhT1hlkeryCBdmaKL9LlSw7KZyN"
+#define THNG_ID "UdMhm6bWPB5wfkTeRApAXkyf"
+#define PROPERTY_TO_READ "read"
+#define PROPERTY_TO_UPDATE "update"
 
-	PropertyValue propertyValue = evtGetPropertyValue(apiKey,thngId,propertyName);
+void testEvtReadPropertyValue()
+{	
+	PropertyValue property = evt_ReadPropertyValue(API_KEY, THNG_ID, PROPERTY_TO_READ);
+	char expectedValue[]= "0";
+	double expectedTimestamp = 1405590561039;
 	
-	char expectedPropertyValue[20];
-	strcpy(expectedPropertyValue,"600.00");
-	if(strcmp(expectedPropertyValue,propertyValue.value) == 0)
+	if (property.timestamp == expectedTimestamp)
 	{
-		_dbgwrite("\r\n SUCCESS property value OK - testCreateReadPropertyURL\r\n");
+		_dbgwrite("SUCCESS property read TIMESTAMP\r\n");		
 	}
-	else {
-		_dbgwrite("\r\n FAILED propety value ERR - testCreateReadPropertyURL\r\n");
-		_dbgwrite(propertyValue.value);
-	}	
-	
-	char expectedTimeStamp[20];
-	strcpy(expectedTimeStamp,"1405095589239");	
-	if(strcmp(expectedTimeStamp,propertyValue.timestamp) == 0)
-	{
-		_dbgwrite("\r\n SUCCESS timestamp value OK - testCreateReadPropertyURL\r\n");
+	else{
+		_dbgwrite("FAILED property read TIMESTAMP\r\n");		
 	}
-	else {
-		_dbgwrite("\r\n FAILED timestamp value ERR - testCreateReadPropertyURL\r\n");
-		_dbgwrite(propertyValue.timestamp);
-	}		
-};
 
-/*
-void testCreateReadPropertyURL()
-{
-	char* thngId = "5368ee7ce4b0eec2cc7a41d8";
-	char* propertyName = "output";
-	
-	char expectedResult[150];
-	strcpy(expectedResult,"/thngs/5368ee7ce4b0eec2cc7a41d8/properties/output?from=latest");
-	
-	char url[150];
-	createReadPropertyURL(url, thngId,propertyName);
-
-	if(strcmp(expectedResult,url) == 0)
+	if (strcmp(property.value,expectedValue) == 0)
 	{
-		_dbgwrite("\r\n SUCCESS testCreateReadPropertyURL\r\n");
+		_dbgwrite("SUCCESS property read VALUE\r\n");		
 	}
-	else {
-		_dbgwrite("\r\n FAILED testCreateReadPropertyURL\r\n");
-	}	
+	else{
+		_dbgwrite("FAILED property read VALUE\r\n");		
+	}
 }
-*/
+
+void testEvtUpdatePropertyValue()
+{
+	PropertyValue property;
+	property.value = "10";
+	property.timestamp = atof(getTimeStamp());
+	
+	int result = evt_UpdatePropertyValue(API_KEY, THNG_ID, PROPERTY_TO_UPDATE, &property);
+	
+	if (result == 200)
+	{
+		_dbgwrite("SUCCESS property update");
+	}
+	else{
+		_dbgwrite("FAILED property update");		
+	}
+}
 
 void connectToWifi()
 {
@@ -71,11 +65,12 @@ void FlyportTask()
 	connectToWifi();
 	
 	/*
-	testCreateReadPropertyURL();
+	testEvtUpdatePropertyValue();
 	vTaskDelay(500);
 	*/
 	
-	testEvtGetPropertyValue();
+	testEvtReadPropertyValue();
+	vTaskDelay(500);
 	
 	while(1);
 };

@@ -13,16 +13,12 @@
 
 char buff[300];
 
-TCP_SOCKET client = INVALID_SOCKET;
+TCP_SOCKET socket = INVALID_SOCKET;
 
 char respHeader[500];
 char respBody[500];
 
 PropertyValue property;
-
-void createReadPropertyURL(char* url, char* thngId, char* propertyName){	
-	sprintf(url, "%s%s%s%s%s", THNGS_PATH, thngId, PROPERTIES_PATH, propertyName, FROM_LATEST);	
-};
 
 char *print_number_value(cJSON *item)
 {
@@ -38,9 +34,27 @@ char *print_number_value(cJSON *item)
 		str=(char*)malloc(64);	/* This is a nice tradeoff. */
 		if (str)
 		{
-			if (fabs(floor(d)-d)<=DBL_EPSILON)			sprintf(str,"%.0f",d);
-			else if (fabs(d)<1.0e-6 || fabs(d)>1.0e9)	sprintf(str,"%e",d);
-			else										sprintf(str,"%f",d);
+			if (fabs(floor(d)-d)<=DBL_EPSILON){
+				sprintf(str,"%.0f",d);
+				_dbgwrite("0f:");
+				_dbgwrite(str);
+				_dbgwrite("\n\r");
+			}
+			else if (fabs(d)<1.0e-6 || fabs(d)>1.0e9)
+			{
+				sprintf(str,"%e",d);
+				_dbgwrite("e:");
+				_dbgwrite(str);
+				_dbgwrite("\n\r");
+
+			}
+			else{
+				sprintf(str,"%f",d);
+				_dbgwrite("f:");
+				_dbgwrite(str);
+				_dbgwrite("\n\r");
+
+			}
 		}
 	}
 	return str;
@@ -63,16 +77,27 @@ static char *print_string_ptr(const char *str)
 	const char *ptr;char *ptr2,*outp;int len=0;unsigned char token;
 	
 	if (!str) return cJSON_strdup("");
-	ptr=str;while ((token=*ptr) && ++len) {if (strchr("\"\\\b\f\n\r\t",token)) len++; else if (token<32) len+=5;ptr++;}
+	ptr=str;
+	
+	while ((token=*ptr) && ++len) 
+	{
+		if (strchr("\"\\\b\f\n\r\t",token)) len++; 
+		else if (token<32) 
+			len+=5;
+			ptr++;
+	}
 	
 	outp=(char*)malloc(len+3);
 	if (!outp) return 0;
 
-	ptr2=outp;ptr=str;
+	ptr2=outp;
+	ptr=str;
 	//*ptr2++='\"';
 	while (*ptr)
 	{
-		if ((unsigned char)*ptr>31 && *ptr!='\"' && *ptr!='\\') *ptr2++=*ptr++;
+		if ((unsigned char)*ptr>31 && *ptr!='\"' && *ptr!='\\'){
+			*ptr2++=*ptr++;
+		}
 		else
 		{
 			*ptr2++='\\';
@@ -126,32 +151,60 @@ char* findJsonInResponseStr(char* str) {
 		}
 		
 	}
-
 	return NULL;
 }
 
-PropertyValue evtGetPropertyValue(char* apikey, char* thngId, char* propertyName)
+/**
+* Internal utils
+*/
+static void connect()
 {
-	client = TCPClientOpen(EVRYTHNG_API_HOST, EVRYTHNG_API_PORT);	
-	while(!TCPisConn(client))
+	socket = TCPClientOpen(EVRYTHNG_API_HOST, EVRYTHNG_API_PORT);	
+	while(!TCPisConn(socket))
     {
 		vTaskDelay(15);
 		_dbgwrite(".");
     }
-	_dbgwrite("TCP connection OK\r\n");
+	_dbgwrite("\r\nTCP connection OK\r\n");
+}
+
+static void disconnect()
+{
+	TCPClientClose(socket);
+}
+
+/**
+* EVT API
+*/
+void createPropertyURL(char* url, char* thngId, char* propertyName){	
+	sprintf(url, "%s%s%s%s%s", THNGS_PATH, thngId, PROPERTIES_PATH, propertyName, FROM_LATEST);	
+};
+
+void createUpdatePropertyURL(char* url, char* thngId, char* propertyName){
+	sprintf(url, "%s%s%s%s", THNGS_PATH, thngId, PROPERTIES_PATH, propertyName);	
+};
+
+void createPostActionURL(char* url, char* pathData, char* actionType){
+	sprintf(url, "%s%s%s", ACTIONS_PATH, "/", actionType);
+}
+
+PropertyValue evt_ReadPropertyValue(char* apikey, char* thngId, char* propertyName)
+{
+	connect();
 
 	char pathData[150];	
-	createReadPropertyURL(pathData, thngId, propertyName);
+	createPropertyURL(pathData, thngId, propertyName);
 	
-	int responseCode = HTTP_Get(client, EVRYTHNG_API_HOST, pathData, "Authorization: InCChEsfCIrbM4pwkEi31jipNSK1y95HKoTwiaNlIkrVqgUiVKlr293nggUT1i0fiWSyKjUeczaNPV7X", respHeader, ARRAY_SIZE(respHeader), respBody, ARRAY_SIZE(respBody),200);
+	int responseCode = HTTP_Get(socket, EVRYTHNG_API_HOST, pathData, "Authorization: rHzsaxMsshF1Di5MwSo2BLRNM0jS0J1iZkKbZuwbBbWjVisLGSLnyRhT1hlkeryCBdmaKL9LlSw7KZyN", respHeader, ARRAY_SIZE(respHeader), respBody, ARRAY_SIZE(respBody),200);
 	
-	_dbgwrite("\n\rResponse Header:\n\r");
+	_dbgwrite("\n\rResponse Header GET:\n\r");
 	_dbgwrite(respHeader);
-	_dbgwrite("\n\rResponse Body:\n\r");
+	_dbgwrite("\n\rResponse Body GET:\n\r");
 	_dbgwrite(respBody);
 	_dbgwrite("\n\r");
 	
 	cJSON *json = cJSON_Parse(findJsonInResponseStr(respBody));	
+	
 	if (!json){
         char *error = (char*)cJSON_GetErrorPtr();
         _dbgwrite("\n\r An error was encountered\n\r");
@@ -161,11 +214,105 @@ PropertyValue evtGetPropertyValue(char* apikey, char* thngId, char* propertyName
 		cJSON *item = cJSON_GetArrayItem(json,0);
 		cJSON *timestamp = cJSON_GetObjectItem(item,"timestamp");
 		cJSON *value = cJSON_GetObjectItem(item,"value");
-
-		property.timestamp = print_number_value(timestamp);
-		property.value = print_string(value);	
-	}		
-	cJSON_Delete(json);
+		
+		property.timestamp = timestamp->valuedouble;
+		property.value = print_string_ptr(value->valuestring);
+	}	
+	
+	cJSON_Delete(json);	
+	disconnect();
 	
 	return property;	
 };
+
+int evt_UpdatePropertyValue(char* apikey, char* thngId, char* propertyName, PropertyValue* property)
+{
+	connect();
+
+	char pathData[150];	
+	createUpdatePropertyURL(pathData, thngId, propertyName);
+	
+	/*
+	[
+		{
+			"timestamp": 1404184104538,
+			"value": "13"
+		}
+	]
+	*/
+	cJSON * jsonData = cJSON_CreateArray();
+	cJSON * jsonProperty = cJSON_CreateObject();
+	
+    cJSON_AddItemToObject(jsonProperty,"value",cJSON_CreateString(property->value));
+    cJSON_AddItemToObject(jsonProperty,"timestamp",cJSON_CreateNumber(property->timestamp));
+
+    cJSON_AddItemToArray(jsonData,jsonProperty);
+
+    char *s_out = cJSON_PrintUnformatted(jsonData);
+
+	_dbgwrite("\n\rJSON:\n\r");
+	_dbgwrite(s_out);
+	_dbgwrite("\n\r");
+
+	int responseCode = HTTP_Put(socket, EVRYTHNG_API_HOST, pathData, "Authorization: rHzsaxMsshF1Di5MwSo2BLRNM0jS0J1iZkKbZuwbBbWjVisLGSLnyRhT1hlkeryCBdmaKL9LlSw7KZyN\r\nContent-Type: application/json\r\n", s_out, respHeader, ARRAY_SIZE(respHeader), respBody, ARRAY_SIZE(respBody),200);
+			
+	_dbgwrite("\n\rResponse Header PUT:\n\r");
+	_dbgwrite(respHeader);
+	_dbgwrite("\n\rResponse Body PUT:\n\r");
+	_dbgwrite(respBody);
+	_dbgwrite("\n\r");
+	
+	disconnect();
+	free(s_out);
+	
+	return responseCode;	
+};
+
+int evt_PostAction(char* apikey, char* actionType, char* thingId)
+{
+
+/*
+?createThng=<Boolean> (applies only for thng actions, default: false, access private)
+{
+--*"type": <ActionType>,
+--*"locationSource": "sensor"|"place"|"geoIp"|"unknown",
+--"timestamp": <timestamp>,
+--"location": {
+----"place": <Ref>,
+----"position": <GeoJSON:Point>,
+----"latitude": <Double>, // (deprecated)
+----"longitude": <Double> // (deprecated)
+--},
+--"device": <String>,
+--"context": {},
+--"customFields":<CustomFields>
+}
+*/
+	connect();
+
+	char pathData[150];
+	createPostActionURL(pathData, actionType);
+	
+	cJSON * jsonData = cJSON_CreateObject();
+	
+    cJSON_AddItemToObject(jsonProperty,"type",cJSON_CreateString(property->value));
+    cJSON_AddItemToObject(jsonProperty,"locationSource",cJSON_CreateString(property->timestamp));
+
+    cJSON_AddItemToArray(jsonData,jsonProperty);
+
+    char *s_out = cJSON_PrintUnformatted(jsonData);
+
+	_dbgwrite("\n\rJSON:\n\r");
+	_dbgwrite(s_out);
+	_dbgwrite("\n\r");
+
+	int responseCode = HTTP_Put(socket, EVRYTHNG_API_HOST, pathData, "Authorization: rHzsaxMsshF1Di5MwSo2BLRNM0jS0J1iZkKbZuwbBbWjVisLGSLnyRhT1hlkeryCBdmaKL9LlSw7KZyN\r\nContent-Type: application/json\r\n", s_out, respHeader, ARRAY_SIZE(respHeader), respBody, ARRAY_SIZE(respBody),200);
+			
+	
+	
+	
+	
+	disconnect();
+	free(s_out);
+	return responseCode;
+}

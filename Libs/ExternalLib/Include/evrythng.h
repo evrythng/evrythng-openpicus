@@ -8,13 +8,29 @@
 #define PROPERTIES_PATH "/properties/"
 #define FROM_LATEST "?from=latest"
 
+#define ACTIONS_PATH "/actions/"
+
 typedef struct {
-	char* timestamp;
+	double timestamp;
 	char* value;
 } PropertyValue;
 
-void createReadPropertyURL(char* url, char* thngId, char* propertyName);
+#define SCANS 0
+#define IMPLICIT_SCANS 1
+#define CHECKINS 2
 
-PropertyValue evtGetPropertyValue(char* apikey, char* thngId, char* propertyName);
+static const char * actionTypes[] = {
+    "scans",
+    "implicitScans",
+    "checkins"
+};
+
+void createPropertyURL(char* url, char* thngId, char* propertyName);
+void createUpdatePropertyURL(char* url, char* thngId, char* propertyName);
+
+PropertyValue evt_ReadPropertyValue(char* apikey, char* thngId, char* propertyName);
+int evt_UpdatePropertyValue(char* apikey, char* thngId, char* propertyName, PropertyValue * value);
+
+Action evt_PostAction(char* apikey, char* actionType, char* thingId);
 
 #endif /* __EVRYTHNG_API_H_ */

@@ -61,7 +61,7 @@
 #include "queue.h"
 #include "semphr.h"
 
-//#define USE_RTCC_LIB
+#define USE_RTCC_LIB
 //	UART general defines
 #define UART_BUFFER_SIZE 	256
 #define UART_PORTS			4
