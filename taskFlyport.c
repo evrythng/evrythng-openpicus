@@ -11,9 +11,16 @@
 #define PROPERTY_TO_READ "read"
 #define PROPERTY_TO_UPDATE "update"
 
-void testEvtReadPropertyValue()
+void test_evt_GetPropertyValue()
 {	
-	PropertyValue property = evt_ReadPropertyValue(API_KEY, THNG_ID, PROPERTY_TO_READ);
+	Property property;
+	int responseCode = evt_GetPropertyValue(API_KEY, THNG_ID, PROPERTY_TO_READ,&property);
+	
+	if (responseCode != 200)
+	{
+		_dbgwrite("FAILED property read Server Error\r\n");				
+	}
+	
 	char expectedValue[]= "0";
 	double expectedTimestamp = 1405590561039;
 	
@@ -34,9 +41,9 @@ void testEvtReadPropertyValue()
 	}
 }
 
-void testEvtUpdatePropertyValue()
+void test_evt_UpdatePropertyValue()
 {
-	PropertyValue property;
+	Property property;
 	property.value = "10";
 	property.timestamp = atof(getTimeStamp());
 	
@@ -49,6 +56,22 @@ void testEvtUpdatePropertyValue()
 	else{
 		_dbgwrite("FAILED property update");		
 	}
+}
+
+void test_evt_PostAction(){
+	Action checkinAction;	
+	checkinAction.type = ACTION_CHECKINS;
+	checkinAction.thng = THNG_ID;
+	
+	int result = evt_PostAction(API_KEY, &checkinAction);
+
+	if (result == 201)
+	{
+		_dbgwrite("SUCCESS testEvtPostAction\r\n");
+	}
+	else{
+		_dbgwrite("FAILED testEvtPostAction\r\n");		
+	}	
 }
 
 void connectToWifi()
@@ -64,13 +87,17 @@ void FlyportTask()
 {
 	connectToWifi();
 	
-	/*
-	testEvtUpdatePropertyValue();
+	test_evt_GetPropertyValue();
+	vTaskDelay(500);
+	
+	/*	
+	test_evt_UpdatePropertyValue();
+	vTaskDelay(500);
+	
+	test_evt_PostAction();
 	vTaskDelay(500);
 	*/
-	
-	testEvtReadPropertyValue();
-	vTaskDelay(500);
-	
+
 	while(1);
 };
+
