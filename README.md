@@ -4,31 +4,27 @@ EVRYTHNG API - OpenPicus Flyport integration.
 With the EVRYTHNG API wrapper for Open Picus you can easily integrate the EVRYTHNG platform in your Open Picus applications!
 
 ## Installation ##
-### Dependencies ###
 
-You need to add the provided libraries to your development environment.
+To use the wrapper, add the content of openpicus-evrythng-libs to your project as external libraries
 
-1. JSON parser library (based on http://wiki.openpicus.com/index.php/JSON_Parser): 
-    2. cJSON.h
-    3. cJSON.c
-    4. heap.s 
-2. HTTP library (version 2.0 http://wiki.openpicus.com/index.php/HTTP):
-    3. HTTPlib.h
-    4. HTTPlib.c 
-3. Timestamp library:
-    4. timestamp.h
-    5. timestamp.c
-4. Internal utils:
-    5. evrythng_utils.h
-    6. evrythng_utils.c
+### Included libraries ###
 
-### Library files ###
-
-You need to add the wrapper files to your development environment:
-
- 1. EVRYTHNG wrapper:
-     2. evrythng.h
-     3. evrythng.c
+- JSON parser library (based on http://wiki.openpicus.com/index.php/JSON_Parser): 
+    - cJSON.h
+    - cJSON.c
+    - heap.s 
+- HTTP library (version 2.0 http://wiki.openpicus.com/index.php/HTTP):
+    - HTTPlib.h
+    - HTTPlib.c 
+- Timestamp library:
+    - timestamp.h
+    - timestamp.c
+- Internal utils:
+    - evrythng_utils.h
+    - evrythng_utils.c
+- EVRYTHNG wrapper:
+     - evrythng.h
+     - evrythng.c
  
 ----------
 ## Usage ##
@@ -100,3 +96,7 @@ else
     //Check response code for error
 }
 ```
+----------
+## Test application ##
+
+You can find a test application on how to use the functionality of the wrapper in the test-app folder.
