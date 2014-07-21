@@ -6,7 +6,7 @@
 #include <string.h>
 #include <time.h>
 
-#define API_KEY "YOUR APIKEY GOES HERE"
+#define API_KEY "xJ1DsfaJD9nVLf7Tt61ypPw7sJFnWCduV9uOJfDe2qIFGHBQc3mqJu4vcbzTYKwJRrEbXGG78xbL9OB3"
 #define THNG_ID "UdMhm6bWPB5wfkTeRApAXkyf"
 #define PROPERTY_TO_READ "read"
 #define PROPERTY_TO_UPDATE "update"
@@ -90,13 +90,11 @@ void FlyportTask()
 	test_evt_GetPropertyValue();
 	vTaskDelay(500);
 	
-	/*	
 	test_evt_UpdatePropertyValue();
 	vTaskDelay(500);
 	
 	test_evt_PostAction();
 	vTaskDelay(500);
-	*/
 
 	while(1);
 };
