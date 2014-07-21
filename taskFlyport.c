@@ -6,7 +6,7 @@
 #include <string.h>
 #include <time.h>
 
-#define API_KEY "rHzsaxMsshF1Di5MwSo2BLRNM0jS0J1iZkKbZuwbBbWjVisLGSLnyRhT1hlkeryCBdmaKL9LlSw7KZyN"
+#define API_KEY "YOUR APIKEY GOES HERE"
 #define THNG_ID "UdMhm6bWPB5wfkTeRApAXkyf"
 #define PROPERTY_TO_READ "read"
 #define PROPERTY_TO_UPDATE "update"
