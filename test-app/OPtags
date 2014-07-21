@@ -1,0 +1,425 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACTIONS_PATH	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	12;"	kind:d	line:12
+ACTION_CHECKINS	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	16;"	kind:d	line:16
+ACTION_IMPLICIT_SCANS	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	15;"	kind:d	line:15
+ACTION_SCANS	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	14;"	kind:d	line:14
+API_KEY	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\taskFlyport.c	9;"	kind:d	line:9	file:
+ARRAY_SIZE	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\HTTPlib.h	11;"	kind:d	line:11
+AUTHORIZATION_HEADER_KEY	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	10;"	kind:d	line:10
+Action	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	/^} Action;$/;"	kind:t	line:49	typeref:struct:__anon2
+CONTENT_TYPE_HEADER_KEY	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	11;"	kind:d	line:11
+EVRYTHNG_API_HOST	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	4;"	kind:d	line:4
+EVRYTHNG_API_PORT	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	5;"	kind:d	line:5
+FROM_LATEST	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	9;"	kind:d	line:9
+FlyportTask	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\taskFlyport.c	/^void FlyportTask()$/;"	kind:f	line:86
+GMT_hour_adding	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\timestamp.c	/^int GMT_hour_adding = 0;$/;"	kind:v	line:16
+HTTP_Get	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^int HTTP_Get(TCP_SOCKET socket, char * host, char * path_data, char * custom_header, char * header, int headersize, char * body, int bodysize, int timeout) \/\/multipli di 10ms come vTaskDelay$/;"	kind:f	line:138
+HTTP_Get	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\HTTPlib.h	/^int HTTP_Get(TCP_SOCKET socket, char * host, char * path_data, char * custom_header, char * header, int headersize, char * body, int bodysize, int timeout);$/;"	kind:p	line:17
+HTTP_GetSimple	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^int HTTP_GetSimple(TCP_SOCKET socket, char * host, char * path_data, char * header, int headersize, char * body, int bodysize)$/;"	kind:f	line:162
+HTTP_GetSimple	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\HTTPlib.h	/^int HTTP_GetSimple(TCP_SOCKET socket, char * host, char * path_data, char * header, int headersize, char * body, int bodysize);$/;"	kind:p	line:18
+HTTP_Post	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^int HTTP_Post(TCP_SOCKET socket, char * host, char * path, char * custom_header, char * CType, char * data, char * header, int headersize, char * body, int bodysize, int timeout) \/\/multipli di 10ms come vTaskDelay$/;"	kind:f	line:182
+HTTP_Post	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\HTTPlib.h	/^int HTTP_Post(TCP_SOCKET socket, char * host, char * path, char * custom_header, char * CType, char * data, char * header, int headersize, char * body, int bodysize, int timeout);$/;"	kind:p	line:19
+HTTP_PostSimple	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^int HTTP_PostSimple(TCP_SOCKET socket, char * host, char * path, char * data, char * header, int headersize, char * body, int bodysize) \/\/multipli di 10ms come vTaskDelay$/;"	kind:f	line:207
+HTTP_PostSimple	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\HTTPlib.h	/^int HTTP_PostSimple(TCP_SOCKET socket, char * host, char * path, char * data, char * header, int headersize, char * body, int bodysize);$/;"	kind:p	line:20
+HTTP_Put	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^int HTTP_Put(TCP_SOCKET socket, char * host, char * path, char * custom_header, char * data, char * header, int headersize, char * body, int bodysize, int timeout) \/\/multipli di 10ms come vTaskDelay$/;"	kind:f	line:226
+HTTP_Put	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\HTTPlib.h	/^int HTTP_Put(TCP_SOCKET socket, char * host, char * path, char * custom_header, char * data, char * header, int headersize, char * body, int bodysize, int timeout);$/;"	kind:p	line:21
+HTTP_Read	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^int HTTP_Read(TCP_SOCKET socket, char * header, int headersize, char * body, int bodysize, int timeout)$/;"	kind:f	line:66
+HTTP_Read	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\HTTPlib.h	/^int HTTP_Read(TCP_SOCKET socket, char * header, int headersize, char * body, int bodysize, int timeout);$/;"	kind:p	line:26
+HTTP_URLDecode	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^void HTTP_URLDecode(char * dest, char * src)$/;"	kind:f	line:303
+HTTP_URLDecode	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\HTTPlib.h	/^void HTTP_URLDecode(char * dest, char * src);$/;"	kind:p	line:24
+HTTP_URLDecodeLen	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^int HTTP_URLDecodeLen(char * str)$/;"	kind:f	line:333
+HTTP_URLDecodeLen	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\HTTPlib.h	/^int HTTP_URLDecodeLen(char * str);$/;"	kind:p	line:25
+HTTP_URLEncode	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^void HTTP_URLEncode(char * dest, char * src)$/;"	kind:f	line:244
+HTTP_URLEncode	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\HTTPlib.h	/^void HTTP_URLEncode(char * dest, char * src);$/;"	kind:p	line:22
+HTTP_URLEncodeLen	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^int HTTP_URLEncodeLen(char * str)$/;"	kind:f	line:277
+HTTP_URLEncodeLen	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\HTTPlib.h	/^int HTTP_URLEncodeLen(char * str);$/;"	kind:p	line:23
+LOCATION_TYPE_GEOIP	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	20;"	kind:d	line:20
+LOCATION_TYPE_PLACE	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	19;"	kind:d	line:19
+LOCATION_TYPE_SENSOR	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	18;"	kind:d	line:18
+LOCATION_TYPE_UNKNOWN	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	21;"	kind:d	line:21
+MY_DEFAULT_CHANNEL_LIST	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	104;"	kind:d	line:104
+MY_DEFAULT_CHANNEL_LIST_POSTSCAN	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	106;"	kind:d	line:106
+MY_DEFAULT_CHANNEL_LIST_PRESCAN	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	105;"	kind:d	line:105
+MY_DEFAULT_EVENT_NOTIFICATION_LIST	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	110;"	kind:d	line:110
+MY_DEFAULT_LIST_RETRY_COUNT	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	107;"	kind:d	line:107
+MY_DEFAULT_NETWORK_TYPE	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	100;"	kind:d	line:100
+MY_DEFAULT_PSK	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	149;"	kind:d	line:149
+MY_DEFAULT_PSK_PHRASE	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	147;"	kind:d	line:147
+MY_DEFAULT_PS_POLL	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	116;"	kind:d	line:116
+MY_DEFAULT_SCAN_TYPE	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	102;"	kind:d	line:102
+MY_DEFAULT_SSID_NAME	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	98;"	kind:d	line:98
+MY_DEFAULT_WEP_KEYS_104	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	173;"	kind:d	line:173
+MY_DEFAULT_WEP_KEYS_40	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	165;"	kind:d	line:165
+MY_DEFAULT_WEP_KEY_INDEX	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	181;"	kind:d	line:181
+MY_DEFAULT_WEP_PHRASE	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	162;"	kind:d	line:162
+MY_DEFAULT_WIFI_SECURITY_MODE	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	118;"	kind:d	line:118
+OnConnectionFailed	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\WF_Events.c	/^void OnConnectionFailed(UINT8 ev, UINT16 evinfo)$/;"	kind:f	line:16
+OnConnectionPermLost	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\WF_Events.c	/^void OnConnectionPermLost(UINT8 ev, UINT16 evinfo)$/;"	kind:f	line:34
+OnConnectionReestablished	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\WF_Events.c	/^void OnConnectionReestablished(UINT8 ev, UINT16 evinfo)$/;"	kind:f	line:28
+OnConnectionSuccessful	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\WF_Events.c	/^void OnConnectionSuccessful(UINT8 ev, UINT16 evinfo)$/;"	kind:f	line:9
+OnConnectionTempLost	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\WF_Events.c	/^void OnConnectionTempLost(UINT8 ev, UINT16 evinfo)$/;"	kind:f	line:22
+OnScanResult	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\WF_Events.c	/^void OnScanResult(UINT8 ev, UINT16 evinfo)$/;"	kind:f	line:41
+PROPERTIES_PATH	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	8;"	kind:d	line:8
+PROPERTY_TO_READ	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\taskFlyport.c	11;"	kind:d	line:11	file:
+PROPERTY_TO_UPDATE	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\taskFlyport.c	12;"	kind:d	line:12	file:
+Property	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	/^} Property;$/;"	kind:t	line:26	typeref:struct:__anon1
+SOFTAP_CHECK_LINK_STATUS	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	108;"	kind:d	line:108
+SOFTAP_LINK_FAILURE_THRESHOLD	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	109;"	kind:d	line:109
+ScanCompleted	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\WF_Events.c	/^BOOL ScanCompleted = FALSE;$/;"	kind:v	line:7
+THNGS_PATH	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	7;"	kind:d	line:7
+THNG_ID	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\taskFlyport.c	10;"	kind:d	line:10	file:
+USE_GRATUITOUS_ARP	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	75;"	kind:d	line:75
+WF_DEBUG	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	84;"	kind:d	line:84
+WF_USE_GROUP_SET_GETS	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	73;"	kind:d	line:73
+WF_USE_INDIVIDUAL_SET_GETS	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	72;"	kind:d	line:72
+WF_USE_MULTICAST_FUNCTIONS	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	71;"	kind:d	line:71
+WF_USE_POWER_SAVE_FUNCTIONS	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	70;"	kind:d	line:70
+WF_USE_SCAN_FUNCTIONS	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	68;"	kind:d	line:68
+WF_USE_TX_POWER_CONTROL_FUNCTIONS	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	69;"	kind:d	line:69
+__EVRYTHNG_API_H_	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	2;"	kind:d	line:2
+__EVRYTHNG_TIMESTAMP_H_	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\timestamp.h	2;"	kind:d	line:2
+__EVRYTHNG_UTILS_H_	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng_utils.h	2;"	kind:d	line:2
+__WF_CONFIG_H_	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\WF_Config.h	52;"	kind:d	line:52
+a	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateDoubleArray(double *numbers,int count)		{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	kind:l	line:540
+a	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateFloatArray(float *numbers,int count)			{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	kind:l	line:539
+a	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateIntArray(int *numbers,int count)				{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	kind:l	line:538
+a	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateStringArray(const char **strings,int count)	{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateString(strings[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	kind:l	line:541
+bff	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	char bff[2];$/;"	kind:l	line:72
+buf	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\WF_Events.c	/^	char buf[8];$/;"	kind:l	line:44
+c	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	cJSON *c=cJSON_New_Item();$/;"	kind:l	line:253
+c	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	cJSON *c=object->child; $/;"	kind:l	line:477
+c	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_DetachItemFromArray(cJSON *array,int which)			{cJSON *c=array->child;while (c && which>0) c=c->next,which--;if (!c) return 0;$/;"	kind:l	line:494
+c	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_DetachItemFromObject(cJSON *object,const char *string) {int i=0;cJSON *c=object->child;while (c && cJSON_strcasecmp(c->string,string)) i++,c=c->next;if (c) return cJSON_DetachItemFromArray(object,i);return 0;}$/;"	kind:l	line:497
+c	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_GetArrayItem(cJSON *array,int item)				{cJSON *c=array->child;  while (c && item>0) item--,c=c->next; return c;}$/;"	kind:l	line:474
+c	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^int    cJSON_GetArraySize(cJSON *array)							{cJSON *c=array->child;int i=0;while(c)i++,c=c->next;return i;}$/;"	kind:l	line:473
+c	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^void   cJSON_AddItemToArray(cJSON *array, cJSON *item)						{cJSON *c=array->child;if (!item) return; if (!c) {array->child=item;} else {while (c && c->next) c=c->next; suffix_object(c,item);}}$/;"	kind:l	line:489
+c	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^void   cJSON_ReplaceItemInArray(cJSON *array,int which,cJSON *newitem)		{cJSON *c=array->child;while (c && which>0) c=c->next,which--;if (!c) return;$/;"	kind:l	line:501
+c	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^void   cJSON_ReplaceItemInObject(cJSON *object,const char *string,cJSON *newitem){int i=0;cJSON *c=object->child;while(c && cJSON_strcasecmp(c->string,string))i++,c=c->next;if(c){newitem->string=cJSON_strdup(string);cJSON_ReplaceItemInArray(object,i,newitem);}}$/;"	kind:l	line:504
+cJSON	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^typedef struct cJSON {$/;"	kind:s	line:38
+cJSON	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^} cJSON;$/;"	kind:t	line:49	typeref:struct:cJSON
+cJSON_AddFalseToObject	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	116;"	kind:d	line:116
+cJSON_AddItemReferenceToArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern void cJSON_AddItemReferenceToArray(cJSON *array, cJSON *item);$/;"	kind:p	line:101
+cJSON_AddItemReferenceToArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^void	cJSON_AddItemReferenceToArray(cJSON *array, cJSON *item)						{cJSON_AddItemToArray(array,create_reference(item));}$/;"	kind:f	line:491
+cJSON_AddItemReferenceToObject	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern void	cJSON_AddItemReferenceToObject(cJSON *object,const char *string,cJSON *item);$/;"	kind:p	line:102
+cJSON_AddItemReferenceToObject	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^void	cJSON_AddItemReferenceToObject(cJSON *object,const char *string,cJSON *item)	{cJSON_AddItemToObject(object,string,create_reference(item));}$/;"	kind:f	line:492
+cJSON_AddItemToArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern void cJSON_AddItemToArray(cJSON *array, cJSON *item);$/;"	kind:p	line:98
+cJSON_AddItemToArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^void   cJSON_AddItemToArray(cJSON *array, cJSON *item)						{cJSON *c=array->child;if (!item) return; if (!c) {array->child=item;} else {while (c && c->next) c=c->next; suffix_object(c,item);}}$/;"	kind:f	line:489
+cJSON_AddItemToObject	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern void	cJSON_AddItemToObject(cJSON *object,const char *string,cJSON *item);$/;"	kind:p	line:99
+cJSON_AddItemToObject	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^void   cJSON_AddItemToObject(cJSON *object,const char *string,cJSON *item)	{if (!item) return; if (item->string) cJSON_free(item->string);item->string=cJSON_strdup(string);cJSON_AddItemToArray(object,item);}$/;"	kind:f	line:490
+cJSON_AddNullToObject	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	114;"	kind:d	line:114
+cJSON_AddNumberToObject	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	117;"	kind:d	line:117
+cJSON_AddStringToObject	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	118;"	kind:d	line:118
+cJSON_AddTrueToObject	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	115;"	kind:d	line:115
+cJSON_Array	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	32;"	kind:d	line:32
+cJSON_CreateArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern cJSON *cJSON_CreateArray();$/;"	kind:p	line:88
+cJSON_CreateArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateArray()						$/;"	kind:f	line:523
+cJSON_CreateBool	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern cJSON *cJSON_CreateBool(int b);$/;"	kind:p	line:85
+cJSON_CreateBool	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateBool(int b)					{cJSON *item=cJSON_New_Item();if(item)item->type=b?cJSON_True:cJSON_False;return item;}$/;"	kind:f	line:510
+cJSON_CreateDoubleArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern cJSON *cJSON_CreateDoubleArray(double *numbers,int count);$/;"	kind:p	line:94
+cJSON_CreateDoubleArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateDoubleArray(double *numbers,int count)		{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	kind:f	line:540
+cJSON_CreateFalse	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern cJSON *cJSON_CreateFalse();$/;"	kind:p	line:84
+cJSON_CreateFalse	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateFalse()						{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_False;return item;}$/;"	kind:f	line:509
+cJSON_CreateFloatArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern cJSON *cJSON_CreateFloatArray(float *numbers,int count);$/;"	kind:p	line:93
+cJSON_CreateFloatArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateFloatArray(float *numbers,int count)			{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	kind:f	line:539
+cJSON_CreateIntArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern cJSON *cJSON_CreateIntArray(int *numbers,int count);$/;"	kind:p	line:92
+cJSON_CreateIntArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateIntArray(int *numbers,int count)				{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	kind:f	line:538
+cJSON_CreateNull	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern cJSON *cJSON_CreateNull();$/;"	kind:p	line:82
+cJSON_CreateNull	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateNull()						{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_NULL;return item;}$/;"	kind:f	line:507
+cJSON_CreateNumber	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern cJSON *cJSON_CreateNumber(double num);$/;"	kind:p	line:86
+cJSON_CreateNumber	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateNumber(double num)			{cJSON *item=cJSON_New_Item();if(item){item->type=cJSON_Number;item->valuedouble=num;item->valueint=(int)num;}return item;}$/;"	kind:f	line:511
+cJSON_CreateObject	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern cJSON *cJSON_CreateObject();$/;"	kind:p	line:89
+cJSON_CreateObject	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateObject()						$/;"	kind:f	line:530
+cJSON_CreateString	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern cJSON *cJSON_CreateString(const char *string);$/;"	kind:p	line:87
+cJSON_CreateString	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateString(const char *string)	$/;"	kind:f	line:512
+cJSON_CreateStringArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern cJSON *cJSON_CreateStringArray(const char **strings,int count);$/;"	kind:p	line:95
+cJSON_CreateStringArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateStringArray(const char **strings,int count)	{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateString(strings[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	kind:f	line:541
+cJSON_CreateTrue	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern cJSON *cJSON_CreateTrue();$/;"	kind:p	line:83
+cJSON_CreateTrue	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateTrue()						{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_True;return item;}$/;"	kind:f	line:508
+cJSON_Delete	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern void   cJSON_Delete(cJSON *c);$/;"	kind:p	line:67
+cJSON_Delete	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^void cJSON_Delete(cJSON *c)$/;"	kind:f	line:76
+cJSON_DeleteItemFromArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern void   cJSON_DeleteItemFromArray(cJSON *array,int which);$/;"	kind:p	line:106
+cJSON_DeleteItemFromArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^void   cJSON_DeleteItemFromArray(cJSON *array,int which)			{cJSON_Delete(cJSON_DetachItemFromArray(array,which));}$/;"	kind:f	line:496
+cJSON_DeleteItemFromObject	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern void   cJSON_DeleteItemFromObject(cJSON *object,const char *string);$/;"	kind:p	line:108
+cJSON_DeleteItemFromObject	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^void   cJSON_DeleteItemFromObject(cJSON *object,const char *string) {cJSON_Delete(cJSON_DetachItemFromObject(object,string));}$/;"	kind:f	line:498
+cJSON_DetachItemFromArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern cJSON *cJSON_DetachItemFromArray(cJSON *array,int which);$/;"	kind:p	line:105
+cJSON_DetachItemFromArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_DetachItemFromArray(cJSON *array,int which)			{cJSON *c=array->child;while (c && which>0) c=c->next,which--;if (!c) return 0;$/;"	kind:f	line:494
+cJSON_DetachItemFromArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^void   cJSON_DeleteItemFromArray(cJSON *array,int which)			{cJSON_Delete(cJSON_DetachItemFromArray(array,which));}$/;"	kind:p	line:496	file:
+cJSON_DetachItemFromObject	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern cJSON *cJSON_DetachItemFromObject(cJSON *object,const char *string);$/;"	kind:p	line:107
+cJSON_DetachItemFromObject	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_DetachItemFromObject(cJSON *object,const char *string) {int i=0;cJSON *c=object->child;while (c && cJSON_strcasecmp(c->string,string)) i++,c=c->next;if (c) return cJSON_DetachItemFromArray(object,i);return 0;}$/;"	kind:f	line:497
+cJSON_DetachItemFromObject	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^void   cJSON_DeleteItemFromObject(cJSON *object,const char *string) {cJSON_Delete(cJSON_DetachItemFromObject(object,string));}$/;"	kind:p	line:498	file:
+cJSON_False	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	27;"	kind:d	line:27
+cJSON_GetArrayItem	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern cJSON *cJSON_GetArrayItem(cJSON *array,int item);$/;"	kind:p	line:72
+cJSON_GetArrayItem	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_GetArrayItem(cJSON *array,int item)				{cJSON *c=array->child;  while (c && item>0) item--,c=c->next; return c;}$/;"	kind:f	line:474
+cJSON_GetArraySize	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern int	  cJSON_GetArraySize(cJSON *array);$/;"	kind:p	line:70
+cJSON_GetArraySize	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^int    cJSON_GetArraySize(cJSON *array)							{cJSON *c=array->child;int i=0;while(c)i++,c=c->next;return i;}$/;"	kind:f	line:473
+cJSON_GetErrorPtr	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern const char *cJSON_GetErrorPtr();$/;"	kind:p	line:79
+cJSON_GetErrorPtr	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^const char *cJSON_GetErrorPtr() {return ep;}$/;"	kind:f	line:37
+cJSON_GetObjectItem	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern cJSON *cJSON_GetObjectItem(cJSON *object,const char *string);$/;"	kind:p	line:74
+cJSON_GetObjectItem	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_GetObjectItem(cJSON *object,const char *string)	$/;"	kind:f	line:475
+cJSON_Hooks	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^typedef struct cJSON_Hooks {$/;"	kind:s	line:51
+cJSON_Hooks	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^} cJSON_Hooks;$/;"	kind:t	line:54	typeref:struct:cJSON_Hooks
+cJSON_InitHooks	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern void cJSON_InitHooks(cJSON_Hooks* hooks);$/;"	kind:p	line:57
+cJSON_IsReference	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	35;"	kind:d	line:35
+cJSON_NULL	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	29;"	kind:d	line:29
+cJSON_New_Item	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static cJSON *cJSON_New_Item()$/;"	kind:f	line:68	file:
+cJSON_Number	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	30;"	kind:d	line:30
+cJSON_Object	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	33;"	kind:d	line:33
+cJSON_Parse	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern cJSON *cJSON_Parse(const char *value);$/;"	kind:p	line:61
+cJSON_Parse	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_Parse(const char *value)$/;"	kind:f	line:251
+cJSON_Print	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern char  *cJSON_Print(cJSON *item);$/;"	kind:p	line:63
+cJSON_Print	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^char *cJSON_Print(cJSON *item)				{return print_value(item,0,1);}$/;"	kind:f	line:262
+cJSON_PrintUnformatted	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern char  *cJSON_PrintUnformatted(cJSON *item);$/;"	kind:p	line:65
+cJSON_PrintUnformatted	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^char *cJSON_PrintUnformatted(cJSON *item)	{return print_value(item,0,0);}$/;"	kind:f	line:263
+cJSON_ReplaceItemInArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern void cJSON_ReplaceItemInArray(cJSON *array,int which,cJSON *newitem);$/;"	kind:p	line:111
+cJSON_ReplaceItemInArray	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^void   cJSON_ReplaceItemInArray(cJSON *array,int which,cJSON *newitem)		{cJSON *c=array->child;while (c && which>0) c=c->next,which--;if (!c) return;$/;"	kind:f	line:501
+cJSON_ReplaceItemInObject	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern void cJSON_ReplaceItemInObject(cJSON *object,const char *string,cJSON *newitem);$/;"	kind:p	line:112
+cJSON_ReplaceItemInObject	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^void   cJSON_ReplaceItemInObject(cJSON *object,const char *string,cJSON *newitem){int i=0;cJSON *c=object->child;while(c && cJSON_strcasecmp(c->string,string))i++,c=c->next;if(c){newitem->string=cJSON_strdup(string);cJSON_ReplaceItemInArray(object,i,newitem);}}$/;"	kind:f	line:504
+cJSON_String	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	31;"	kind:d	line:31
+cJSON_True	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	28;"	kind:d	line:28
+cJSON__h	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	24;"	kind:d	line:24
+cJSON_free	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static void (*cJSON_free)(void *ptr) = free;$/;"	kind:v	line:53	file:
+cJSON_malloc	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static void *(*cJSON_malloc)(size_t sz) = malloc;$/;"	kind:v	line:52	file:
+cJSON_strcasecmp	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static int cJSON_strcasecmp(const char *s1,const char *s2)$/;"	kind:f	line:39	file:
+cJSON_strdup	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static char* cJSON_strdup(const char* str)$/;"	kind:f	line:55	file:
+cJSON_strdup	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^static char* cJSON_strdup(const char* str)$/;"	kind:f	line:47	file:
+charType	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^	unsigned short int charType = 0;$/;"	kind:l	line:20
+checkinAction	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\taskFlyport.c	/^	Action checkinAction;	$/;"	kind:l	line:62
+child	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^	struct cJSON *child;		\/* An array or object item will have a child pointer pointing to a chain of the items in the array\/object. *\/$/;"	kind:m	line:40	struct:cJSON	typeref:struct:cJSON::cJSON	access:public
+child	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	cJSON *child;$/;"	kind:l	line:301
+child	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	cJSON *child;$/;"	kind:l	line:380
+child	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	cJSON *child=item->child;$/;"	kind:l	line:331
+child	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	cJSON *child=item->child;$/;"	kind:l	line:419
+cnt	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int cnt=0;$/;"	kind:l	line:70
+cntheader	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int cntheader = 0;$/;"	kind:l	line:78
+code	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	char code[4];$/;"	kind:l	line:75
+connect	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^static void connect()$/;"	kind:f	line:24	file:
+connectToWifi	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\taskFlyport.c	/^void connectToWifi()$/;"	kind:f	line:77
+copy	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^      char* copy;$/;"	kind:l	line:58
+copy	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^      char* copy;$/;"	kind:l	line:50
+createGetPropertyURLPath	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	/^char * createGetPropertyURLPath(char* thngId, char* propertyName);$/;"	kind:p	line:54
+createGetPropertyURLPath	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^char* createGetPropertyURLPath(char* thngId, char* propertyName){$/;"	kind:f	line:83
+createHeader	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	/^char * createHeader(char*apikey);$/;"	kind:p	line:51
+createHeader	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^char* createHeader(char*apikey){$/;"	kind:f	line:65
+createHeader_BL	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^char* createHeader_BL(char*apikey){$/;"	kind:f	line:71
+createHeader_ContentType	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	/^char * createHeader_ContentType(char*apikey, char*contentType);$/;"	kind:p	line:52
+createHeader_ContentType	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^char* createHeader_ContentType(char*apikey, char*contentType){$/;"	kind:f	line:77
+createPostActionURLPath	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	/^char * createPostActionURLPath(char* actionType);$/;"	kind:p	line:56
+createPostActionURLPath	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^char* createPostActionURLPath(char* actionType){$/;"	kind:f	line:95
+createUpdatePropertyURLPath	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	/^char * createUpdatePropertyURLPath(char* thngId, char* propertyName);$/;"	kind:p	line:55
+createUpdatePropertyURLPath	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^char* createUpdatePropertyURLPath(char* thngId, char* propertyName){$/;"	kind:f	line:89
+create_reference	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static cJSON *create_reference(cJSON *item) {cJSON *ref=cJSON_New_Item();if (!ref) return 0;memcpy(ref,item,sizeof(cJSON));ref->string=0;ref->type|=cJSON_IsReference;ref->next=ref->prev=0;return ref;}$/;"	kind:f	line:486	file:
+d	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	double d=item->valuedouble;$/;"	kind:l	line:117
+d	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^	double d=item->valuedouble;$/;"	kind:l	line:109
+disconnect	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^static void disconnect()$/;"	kind:f	line:48	file:
+entries	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	char **entries;$/;"	kind:l	line:329
+entries	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	char **entries=0,**names=0;$/;"	kind:l	line:417
+ep	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static const char *ep;$/;"	kind:v	line:35	file:
+epoch	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\timestamp.c	/^DWORD epoch=0;$/;"	kind:v	line:6
+epochString	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\timestamp.c	/^char epochString[50];$/;"	kind:v	line:5
+epochtime	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\timestamp.c	/^DWORD epochtime=0xA2C2A;$/;"	kind:v	line:7
+error	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^		char *error = (char*)cJSON_GetErrorPtr();$/;"	kind:l	line:153
+evt_GetPropertyValue	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	/^int evt_GetPropertyValue(char* apikey, char* thngId, char* propertyName, Property * value);$/;"	kind:p	line:58
+evt_GetPropertyValue	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^int evt_GetPropertyValue(char* apikey, char* thngId, char* propertyName, Property *property)$/;"	kind:f	line:101
+evt_PostAction	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	/^int evt_PostAction(char* apikey, Action * action);$/;"	kind:p	line:60
+evt_PostAction	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^int evt_PostAction(char* apikey, Action * action)$/;"	kind:f	line:144
+evt_UpdatePropertyValue	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	/^int evt_UpdatePropertyValue(char* apikey, char* thngId, char* propertyName, Property * value);$/;"	kind:p	line:59
+evt_UpdatePropertyValue	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^int evt_UpdatePropertyValue(char* apikey, char* thngId, char* propertyName, Property* property)$/;"	kind:f	line:124
+expectedTimestamp	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\taskFlyport.c	/^	double expectedTimestamp = 1405590561039;$/;"	kind:l	line:25
+expectedValue	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\taskFlyport.c	/^	char expectedValue[]= "0";$/;"	kind:l	line:24
+fB	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	BOOL fB=0;$/;"	kind:l	line:69
+fail	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	int numentries=0,fail=0;$/;"	kind:l	line:420
+fail	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	int numentries=0,i=0,fail=0;$/;"	kind:l	line:332
+findJsonInResponseStr	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng_utils.h	/^char* findJsonInResponseStr(char* str);$/;"	kind:p	line:7
+findJsonInResponseStr	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^char* findJsonInResponseStr(char* str) {$/;"	kind:f	line:15
+firstByteMark	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static const unsigned char firstByteMark[7] = { 0x00, 0x00, 0xC0, 0xE0, 0xF0, 0xF8, 0xFC };$/;"	kind:v	line:137	file:
+foundStart	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^	unsigned short int foundStart = FALSE;$/;"	kind:l	line:19
+free_fn	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^      void (*free_fn)(void *ptr);$/;"	kind:m	line:53	struct:cJSON_Hooks	access:public
+getLen	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^extern unsigned int getLen(void);$/;"	kind:p	line:77
+getTimeStamp	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\timestamp.h	/^char* getTimeStamp();$/;"	kind:p	line:4
+getTimeStamp	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\timestamp.c	/^char* getTimeStamp()$/;"	kind:f	line:46
+header	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^	char * header = createHeader(apikey);$/;"	kind:l	line:106
+header	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^	char * header = createHeader_BL(apikey);$/;"	kind:l	line:149
+header	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^	char * header = createHeader_ContentType(apikey,"application\/json");$/;"	kind:l	line:129
+header	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^	char * header = malloc(strlen(AUTHORIZATION_HEADER_KEY)+strlen(apikey)+1);	$/;"	kind:l	line:66
+header	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^	char * header = malloc(strlen(AUTHORIZATION_HEADER_KEY)+strlen(apikey)+3);	$/;"	kind:l	line:72
+header	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^	char * header = malloc(strlen(AUTHORIZATION_HEADER_KEY)+strlen(apikey)+strlen(CONTENT_TYPE_HEADER_KEY)+strlen(contentType)+5);$/;"	kind:l	line:78
+hex	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^static char hex[] = {'\\x24','\\x26','\\x2B','\\x2C','\\x2F','\\x3A','\\x3B','\\x3D','\\x3F','\\x40','\\x20','\\x22','\\x3C','\\x3E','\\x23','\\x25','\\x7B','\\x7D','\\x7C','\\x5C','\\x5E','\\x7E','\\x5B','\\x5D','\\x60'};$/;"	kind:v	line:63	file:
+i	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int i=0;$/;"	kind:l	line:247
+i	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int i=0;$/;"	kind:l	line:281
+i	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int i=0;$/;"	kind:l	line:306
+i	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int i=0;$/;"	kind:l	line:337
+i	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int i=0;$/;"	kind:l	line:73
+i	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	char *outp=0,*ptr,*ret,*str;int len=7,i=0,j;$/;"	kind:l	line:418
+i	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	int numentries=0,i=0,fail=0;$/;"	kind:l	line:332
+i	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateDoubleArray(double *numbers,int count)		{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	kind:l	line:540
+i	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateFloatArray(float *numbers,int count)			{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	kind:l	line:539
+i	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateIntArray(int *numbers,int count)				{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	kind:l	line:538
+i	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateStringArray(const char **strings,int count)	{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateString(strings[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	kind:l	line:541
+i	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_DetachItemFromObject(cJSON *object,const char *string) {int i=0;cJSON *c=object->child;while (c && cJSON_strcasecmp(c->string,string)) i++,c=c->next;if (c) return cJSON_DetachItemFromArray(object,i);return 0;}$/;"	kind:l	line:497
+i	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^int    cJSON_GetArraySize(cJSON *array)							{cJSON *c=array->child;int i=0;while(c)i++,c=c->next;return i;}$/;"	kind:l	line:473
+i	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^void   cJSON_ReplaceItemInObject(cJSON *object,const char *string,cJSON *newitem){int i=0;cJSON *c=object->child;while(c && cJSON_strcasecmp(c->string,string))i++,c=c->next;if(c){newitem->string=cJSON_strdup(string);cJSON_ReplaceItemInArray(object,i,newitem);}}$/;"	kind:l	line:504
+initializeTime	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\timestamp.h	/^void initializeTime();$/;"	kind:p	line:5
+initializeTime	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\timestamp.c	/^void initializeTime()$/;"	kind:f	line:18
+item	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	cJSON *item=cJSON_New_Item();$/;"	kind:l	line:514
+item	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	cJSON *item=cJSON_New_Item();$/;"	kind:l	line:525
+item	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	cJSON *item=cJSON_New_Item();$/;"	kind:l	line:532
+item	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateBool(int b)					{cJSON *item=cJSON_New_Item();if(item)item->type=b?cJSON_True:cJSON_False;return item;}$/;"	kind:l	line:510
+item	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateFalse()						{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_False;return item;}$/;"	kind:l	line:509
+item	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateNull()						{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_NULL;return item;}$/;"	kind:l	line:507
+item	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateNumber(double num)			{cJSON *item=cJSON_New_Item();if(item){item->type=cJSON_Number;item->valuedouble=num;item->valueint=(int)num;}return item;}$/;"	kind:l	line:511
+item	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateTrue()						{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_True;return item;}$/;"	kind:l	line:508
+item	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^		cJSON *item = cJSON_GetArrayItem(json,0);$/;"	kind:l	line:158
+iter	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^	size_t iter;$/;"	kind:l	line:17
+j	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int j=0;$/;"	kind:l	line:249
+j	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int j=0;$/;"	kind:l	line:307
+j	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	char *outp=0,*ptr,*ret,*str;int len=7,i=0,j;$/;"	kind:l	line:418
+json	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^	cJSON *json = cJSON_Parse(findJsonInResponseStr(response));	$/;"	kind:l	line:151
+jsonChars	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^	char jsonChars[4] = {'{', '[', '}', ']'};$/;"	kind:l	line:18
+jsonData	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^	cJSON * jsonData = cJSON_CreateArray();$/;"	kind:l	line:171
+jsonData	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^	cJSON * jsonData = cJSON_CreateObject();$/;"	kind:l	line:181
+jsonProperty	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^	cJSON * jsonProperty = cJSON_CreateObject();	$/;"	kind:l	line:172
+jsonString	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^	char * jsonString = serializeAction(action);$/;"	kind:l	line:150
+jsonString	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^	char * jsonString = serializeProperty(property);$/;"	kind:l	line:130
+k	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int k=0;$/;"	kind:l	line:248
+k	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int k=0;$/;"	kind:l	line:282
+k	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int k=0;$/;"	kind:l	line:71
+len	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	char *outp=0,*ptr,*ret,*str;int len=7,i=0,j;$/;"	kind:l	line:418
+len	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	char *outp=0,*ptr,*ret;int len=5;$/;"	kind:l	line:330
+len	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	const char *ptr;char *ptr2,*outp;int len=0;unsigned char token;$/;"	kind:l	line:204
+len	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	int len=0;$/;"	kind:l	line:143
+len	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^      size_t len;$/;"	kind:l	line:57
+len	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^	const char *ptr;char *ptr2,*outp;int len=0;unsigned char token;$/;"	kind:l	line:61
+len	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^      size_t len;$/;"	kind:l	line:49
+lenURL	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int lenURL=lenstr;$/;"	kind:l	line:280
+lenURL	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int lenURL=lenstr;$/;"	kind:l	line:336
+lenstr	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int lenstr=strlen(src);$/;"	kind:l	line:246
+lenstr	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int lenstr=strlen(src);$/;"	kind:l	line:305
+lenstr	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int lenstr=strlen(str);$/;"	kind:l	line:279
+lenstr	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int lenstr=strlen(str);$/;"	kind:l	line:335
+limit	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int limit=sizeof hex;$/;"	kind:l	line:250
+limit	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int limit=sizeof hex;$/;"	kind:l	line:283
+locationSource	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	/^	char* locationSource;$/;"	kind:m	line:47	struct:__anon2	access:public
+malloc_fn	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^      void *(*malloc_fn)(size_t sz);$/;"	kind:m	line:52	struct:cJSON_Hooks	access:public
+matchChar	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^	unsigned short int matchChar;$/;"	kind:l	line:21
+mytime	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\timestamp.c	/^struct tm mytime;$/;"	kind:v	line:11	typeref:struct:tm
+n	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	double n=0,sign=1,scale=0;int subscale=0,signsubscale=1;$/;"	kind:l	line:93
+n	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateDoubleArray(double *numbers,int count)		{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	kind:l	line:540
+n	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateFloatArray(float *numbers,int count)			{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	kind:l	line:539
+n	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateIntArray(int *numbers,int count)				{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	kind:l	line:538
+n	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateStringArray(const char **strings,int count)	{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateString(strings[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	kind:l	line:541
+nCODE	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int nCODE=0;$/;"	kind:l	line:74
+names	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	char **entries=0,**names=0;$/;"	kind:l	line:417
+new_item	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^		cJSON *new_item;$/;"	kind:l	line:315
+new_item	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^		cJSON *new_item;$/;"	kind:l	line:399
+next	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^	struct cJSON *next,*prev;	\/* next\/prev allow you to walk array\/object chains. Alternatively, use GetArraySize\/GetArrayItem\/GetObjectItem *\/$/;"	kind:m	line:39	struct:cJSON	typeref:struct:cJSON::cJSON	access:public
+next	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	cJSON *next;$/;"	kind:l	line:78
+node	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	cJSON* node = (cJSON*)cJSON_malloc(sizeof(cJSON));$/;"	kind:l	line:70
+now	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\timestamp.c	/^time_t now;$/;"	kind:v	line:9
+numentries	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	int numentries=0,fail=0;$/;"	kind:l	line:420
+numentries	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	int numentries=0,i=0,fail=0;$/;"	kind:l	line:332
+outp	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	char *outp;$/;"	kind:l	line:142
+outp	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	char *outp=0,*ptr,*ret,*str;int len=7,i=0,j;$/;"	kind:l	line:418
+outp	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	char *outp=0,*ptr,*ret;int len=5;$/;"	kind:l	line:330
+outp	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	char *outp=0;$/;"	kind:l	line:283
+outp	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	const char *ptr;char *ptr2,*outp;int len=0;unsigned char token;$/;"	kind:l	line:204
+outp	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^	const char *ptr;char *ptr2,*outp;int len=0;unsigned char token;$/;"	kind:l	line:61
+p	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateDoubleArray(double *numbers,int count)		{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	kind:l	line:540
+p	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateFloatArray(float *numbers,int count)			{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	kind:l	line:539
+p	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateIntArray(int *numbers,int count)				{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	kind:l	line:538
+p	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^cJSON *cJSON_CreateStringArray(const char **strings,int count)	{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateString(strings[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	kind:l	line:541
+parseProperty	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng_utils.h	/^void parseProperty(Property * property, char* response);$/;"	kind:p	line:6
+parseProperty	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^void parseProperty(Property * property, char* response)$/;"	kind:f	line:149
+parse_array	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static const char *parse_array(cJSON *item,const char *value)$/;"	kind:f	line:299	file:
+parse_array	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static const char *parse_array(cJSON *item,const char *value);$/;"	kind:p	line:242	file:
+parse_number	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static const char *parse_number(cJSON *item,const char *num)$/;"	kind:f	line:91	file:
+parse_object	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static const char *parse_object(cJSON *item,const char *value)$/;"	kind:f	line:378	file:
+parse_object	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static const char *parse_object(cJSON *item,const char *value);$/;"	kind:p	line:244	file:
+parse_string	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static const char *parse_string(cJSON *item,const char *str)$/;"	kind:f	line:138	file:
+parse_value	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static const char *parse_value(cJSON *item,const char *value)$/;"	kind:f	line:266	file:
+parse_value	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static const char *parse_value(cJSON *item,const char *value);$/;"	kind:p	line:240	file:
+pos	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^	size_t pos;$/;"	kind:l	line:16
+prev	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^	struct cJSON *next,*prev;	\/* next\/prev allow you to walk array\/object chains. Alternatively, use GetArraySize\/GetArrayItem\/GetObjectItem *\/$/;"	kind:m	line:39	struct:cJSON	typeref:struct:cJSON::	access:public
+printResponse	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^static void printResponse()$/;"	kind:f	line:53	file:
+print_array	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static char *print_array(cJSON *item,int depth,int fmt)$/;"	kind:f	line:327	file:
+print_array	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static char *print_array(cJSON *item,int depth,int fmt);$/;"	kind:p	line:243	file:
+print_number	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static char *print_number(cJSON *item)$/;"	kind:f	line:114	file:
+print_number_value	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^char *print_number_value(cJSON *item)$/;"	kind:f	line:106
+print_object	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static char *print_object(cJSON *item,int depth,int fmt)$/;"	kind:f	line:415	file:
+print_object	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static char *print_object(cJSON *item,int depth,int fmt);$/;"	kind:p	line:245	file:
+print_string	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static char *print_string(cJSON *item)	{return print_string_ptr(item->valuestring);}$/;"	kind:f	line:237	file:
+print_string_ptr	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static char *print_string_ptr(const char *str)$/;"	kind:f	line:202	file:
+print_string_ptr	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^static char *print_string_ptr(const char *str)$/;"	kind:f	line:59	file:
+print_value	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static char *print_value(cJSON *item,int depth,int fmt)$/;"	kind:f	line:281	file:
+print_value	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static char *print_value(cJSON *item,int depth,int fmt);$/;"	kind:p	line:241	file:
+property	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\taskFlyport.c	/^	Property property;$/;"	kind:l	line:16
+property	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\taskFlyport.c	/^	Property property;$/;"	kind:l	line:46
+ptr	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	char *outp=0,*ptr,*ret,*str;int len=7,i=0,j;$/;"	kind:l	line:418
+ptr	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	char *outp=0,*ptr,*ret;int len=5;$/;"	kind:l	line:330
+ptr	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	const char *ptr;char *ptr2,*outp;int len=0;unsigned char token;$/;"	kind:l	line:204
+ptr	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	const char *ptr=str+1;$/;"	kind:l	line:140
+ptr	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^	const char *ptr;char *ptr2,*outp;int len=0;unsigned char token;$/;"	kind:l	line:61
+ptr2	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	char *ptr2;$/;"	kind:l	line:141
+ptr2	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	const char *ptr;char *ptr2,*outp;int len=0;unsigned char token;$/;"	kind:l	line:204
+ptr2	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^	const char *ptr;char *ptr2,*outp;int len=0;unsigned char token;$/;"	kind:l	line:61
+ref	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static cJSON *create_reference(cJSON *item) {cJSON *ref=cJSON_New_Item();if (!ref) return 0;memcpy(ref,item,sizeof(cJSON));ref->string=0;ref->type|=cJSON_IsReference;ref->next=ref->prev=0;return ref;}$/;"	kind:l	line:486
+request	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	char request[strlen(host)+strlen(path)+strlen(custom_header)+strlen(CType)+strlen(data)+100];$/;"	kind:l	line:184
+request	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	char request[strlen(host)+strlen(path)+strlen(custom_header)+strlen(data)+100];$/;"	kind:l	line:228
+request	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	char request[strlen(host)+strlen(path_data)+strlen(custom_header)+50];$/;"	kind:l	line:140
+respBody	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^char respBody[500];$/;"	kind:v	line:19
+respHeader	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^char respHeader[550];$/;"	kind:v	line:18
+responseCode	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^	int responseCode = HTTP_Get(socket, EVRYTHNG_API_HOST, urlPath, header, respHeader, ARRAY_SIZE(respHeader), respBody, ARRAY_SIZE(respBody),200);$/;"	kind:l	line:108
+responseCode	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^	int responseCode = HTTP_Post(socket, EVRYTHNG_API_HOST, urlPath, header, "application\/json", jsonString, respHeader, ARRAY_SIZE(respHeader), respBody, ARRAY_SIZE(respBody),200); $/;"	kind:l	line:152
+responseCode	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^	int responseCode = HTTP_Put(socket, EVRYTHNG_API_HOST, urlPath, header, jsonString, respHeader, ARRAY_SIZE(respHeader), respBody, ARRAY_SIZE(respBody),200);$/;"	kind:l	line:132
+responseCode	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\taskFlyport.c	/^	int responseCode = evt_GetPropertyValue(API_KEY, THNG_ID, PROPERTY_TO_READ,&property);$/;"	kind:l	line:17
+result	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\taskFlyport.c	/^	int result = evt_PostAction(API_KEY, &checkinAction);$/;"	kind:l	line:66
+result	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\taskFlyport.c	/^	int result = evt_UpdatePropertyValue(API_KEY, THNG_ID, PROPERTY_TO_UPDATE, &property);$/;"	kind:l	line:50
+ret	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	char *outp=0,*ptr,*ret,*str;int len=7,i=0,j;$/;"	kind:l	line:418
+ret	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	char *outp=0,*ptr,*ret;int len=5;$/;"	kind:l	line:330
+rn	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\HTTPlib.c	/^	int rn=0;$/;"	kind:l	line:68
+scale	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	double n=0,sign=1,scale=0;int subscale=0,signsubscale=1;$/;"	kind:l	line:93
+serializeAction	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng_utils.h	/^char * serializeAction(Action * action);$/;"	kind:p	line:10
+serializeAction	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^char * serializeAction(Action * action)$/;"	kind:f	line:179
+serializeProperty	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng_utils.h	/^char * serializeProperty(Property * property);$/;"	kind:p	line:9
+serializeProperty	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^char * serializeProperty(Property * property)$/;"	kind:f	line:169
+sign	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	double n=0,sign=1,scale=0;int subscale=0,signsubscale=1;$/;"	kind:l	line:93
+signsubscale	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	double n=0,sign=1,scale=0;int subscale=0,signsubscale=1;$/;"	kind:l	line:93
+skip	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static const char *skip(const char *inp) {while (inp && *inp && (unsigned char)*inp<=32) inp++; return inp;}$/;"	kind:f	line:248	file:
+socket	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^TCP_SOCKET socket = INVALID_SOCKET;$/;"	kind:v	line:16
+startPos	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^	int startPos;$/;"	kind:l	line:22
+str	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	char *outp=0,*ptr,*ret,*str;int len=7,i=0,j;$/;"	kind:l	line:418
+str	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	char *str;$/;"	kind:l	line:116
+str	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^	char *str;$/;"	kind:l	line:108
+string	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^	char *string;				\/* The item's name string, if this item is the child of, or is in the list of subitems of an object. *\/$/;"	kind:m	line:48	struct:cJSON	access:public
+subbuff	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^				char *subbuff = malloc(pos - startPos + 1 + 1);$/;"	kind:l	line:27
+subscale	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	double n=0,sign=1,scale=0;int subscale=0,signsubscale=1;$/;"	kind:l	line:93
+suffix_object	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^static void suffix_object(cJSON *prev,cJSON *item) {prev->next=item;item->prev=prev;}$/;"	kind:f	line:484	file:
+test_evt_GetPropertyValue	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\taskFlyport.c	/^void test_evt_GetPropertyValue()$/;"	kind:f	line:14
+test_evt_PostAction	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\taskFlyport.c	/^void test_evt_PostAction(){$/;"	kind:f	line:61
+test_evt_UpdatePropertyValue	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\taskFlyport.c	/^void test_evt_UpdatePropertyValue()$/;"	kind:f	line:44
+thng	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	/^	char* thng;$/;"	kind:m	line:48	struct:__anon2	access:public
+timeSinceEpoch	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\timestamp.c	/^	 time_t timeSinceEpoch = mktime(&mytime);$/;"	kind:l	line:49
+timestamp	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	/^	double timestamp;$/;"	kind:m	line:24	struct:__anon1	access:public
+timestamp	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^		cJSON *timestamp = cJSON_GetObjectItem(item,"timestamp");$/;"	kind:l	line:159
+token	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	const char *ptr;char *ptr2,*outp;int len=0;unsigned char token;$/;"	kind:l	line:204
+token	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^	const char *ptr;char *ptr2,*outp;int len=0;unsigned char token;$/;"	kind:l	line:61
+ts	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\timestamp.c	/^struct tm *ts;$/;"	kind:v	line:10	typeref:struct:tm
+type	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^	int type;					\/* The type of the item, as above. *\/$/;"	kind:m	line:42	struct:cJSON	access:public
+type	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	/^	char* type;$/;"	kind:m	line:46	struct:__anon2	access:public
+uc	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	unsigned long int uc,uc2;$/;"	kind:l	line:144
+uc2	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\cJSON.c	/^	unsigned long int uc,uc2;$/;"	kind:l	line:144
+url	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^	char * url = malloc(strlen(ACTIONS_PATH)+strlen(actionType)+1);$/;"	kind:l	line:96
+url	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^	char * url = malloc(strlen(THNGS_PATH)+strlen(thngId)+strlen(PROPERTIES_PATH)+strlen(propertyName)+1);$/;"	kind:l	line:90
+url	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^	char * url = malloc(strlen(THNGS_PATH)+strlen(thngId)+strlen(PROPERTIES_PATH)+strlen(propertyName)+strlen(FROM_LATEST)+1);$/;"	kind:l	line:84
+urlPath	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^	char * urlPath = createGetPropertyURLPath(thngId, propertyName);$/;"	kind:l	line:105
+urlPath	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^	char * urlPath = createPostActionURLPath(action->type);$/;"	kind:l	line:148
+urlPath	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng.c	/^	char * urlPath = createUpdatePropertyURLPath(thngId, propertyName);$/;"	kind:l	line:128
+value	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\evrythng.h	/^	char* value;$/;"	kind:m	line:25	struct:__anon1	access:public
+value	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\evrythng_utils.c	/^		cJSON *value = cJSON_GetObjectItem(item,"value");$/;"	kind:l	line:160
+valuedouble	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^	double valuedouble;			\/* The item's number, if type==cJSON_Number *\/$/;"	kind:m	line:46	struct:cJSON	access:public
+valueint	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^	int valueint;				\/* The item's number, if type==cJSON_Number *\/$/;"	kind:m	line:45	struct:cJSON	access:public
+valuestring	C:\Users\Larizgoitia\Documents\GitHub\evrythng-openpicus\test-app\Libs\ExternalLib\Include\cJSON.h	/^	char *valuestring;			\/* The item's string, if type==cJSON_String *\/$/;"	kind:m	line:44	struct:cJSON	access:public
