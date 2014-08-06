@@ -1,7 +1,7 @@
-EVRYTHNG API - OpenPicus Flyport integration.
+EVRYTHNG API - OpenPicus Flyport Wrapper
 =============================================================
 
-With the EVRYTHNG API wrapper for Open Picus you can easily integrate the EVRYTHNG platform in your Open Picus applications!
+The EVRYTHNG API wrapper for Open Picus makes it easier to integrate some of the basic functionality of the EVRYTHNG platform in your Open Picus applications!
 
 ## Installation ##
 
