@@ -12,39 +12,53 @@
 #include <limits.h>
 #include <ctype.h>
 
-char* findJsonInResponseStr(char* str) {
+void findJsonInResponseStr(char* jsonInResponse, const char* str) {
 	size_t pos;
-	size_t iter;
-	char jsonChars[4] = {'{', '[', '}', ']'};
+	size_t beginCharsIndex;
+	size_t endCharsIndex;
+	
+	char beginChars[2] = {'{', '['};
+	char endChars[2] = {'}', ']'};
+	
 	unsigned short int foundStart = FALSE;
-	unsigned short int charType = 0;
-	unsigned short int matchChar;
-	int startPos;
-
+	unsigned short int foundEnd = FALSE;
+	
+	int trimStart;
+	int trimEnd;
+		
+	//search start pos
 	for (pos = 0; pos < strlen(str); pos++) {
-		if(foundStart == TRUE) {
-			if (str[pos] == jsonChars[matchChar + charType]) {
-				char *subbuff = malloc(pos - startPos + 1 + 1);
-				memcpy(subbuff, &str[startPos], pos - startPos + 1);
-				subbuff[pos + 1] = '\0';
-				return subbuff;
-			}
-		} else {
-			for (iter = 0; iter < 2; iter++) {
-				if (str[pos] == jsonChars[iter + charType]) {
-					charType = 2;
-					foundStart = TRUE;
-					startPos = pos;
-					matchChar = iter;
-				}
+		for(beginCharsIndex=0; beginCharsIndex < strlen(beginChars); beginCharsIndex++){
+			if (str[pos] == beginChars[beginCharsIndex]) {
+				trimStart = pos;
+				foundStart = TRUE;
+				break;
 			}
 		}
-		
+		if (foundStart) break;
 	}
-	return NULL;
+	
+	//search end pos
+	for (pos = strlen(str)-1; pos > 0; pos--) {	
+		for(endCharsIndex=0; endCharsIndex < strlen(endChars); endCharsIndex++){
+			if (str[pos] == endChars[endCharsIndex]) {
+				trimEnd = pos;
+				foundEnd = TRUE;
+				break;
+			}
+		}
+		if (foundEnd) break;
+	}
+		
+	if (foundStart && foundEnd){
+		int length = trimEnd - trimStart + 1;		
+		//char * subbuff = (char*)malloc(sizeof(char)*length + 100);
+		strncpy(jsonInResponse, &str[trimStart], length);
+		jsonInResponse[length] = '\0';
+	}   
 }
 
-static char* cJSON_strdup(const char* str)
+static char*cJSON_strdup(const char*str)                                                                          
 {
       size_t len;
       char* copy;
@@ -148,7 +162,9 @@ char *print_number_value(cJSON *item)
 
 void parseProperty(Property * property, char* response)
 {
-	cJSON *json = cJSON_Parse(findJsonInResponseStr(response));	
+	char jsonInResponse[strlen(response)];
+	findJsonInResponseStr(jsonInResponse, response);
+	cJSON *json = cJSON_Parse(jsonInResponse);	
 	if (!json){
 		char *error = (char*)cJSON_GetErrorPtr();
 		_dbgwrite("\n\r An error was encountered\n\r");
@@ -158,7 +174,7 @@ void parseProperty(Property * property, char* response)
 		cJSON *item = cJSON_GetArrayItem(json,0);
 		cJSON *timestamp = cJSON_GetObjectItem(item,"timestamp");
 		cJSON *value = cJSON_GetObjectItem(item,"value");
-		
+			
 		property->timestamp = timestamp->valuedouble;
 		property->value = print_string_ptr(value->valuestring);
 	}	
@@ -174,6 +190,41 @@ char * serializeProperty(Property * property)
     cJSON_AddItemToObject(jsonProperty,"timestamp",cJSON_CreateNumber(property->timestamp));
     cJSON_AddItemToArray(jsonData,jsonProperty);
     return cJSON_PrintUnformatted(jsonData);
+}
+
+void parseAction(Action * action, char* response){
+
+	char jsonInResponse[strlen(response)];
+	findJsonInResponseStr(jsonInResponse, response);
+	char jsonInResponse2[500] = "[{\"id\":\"Ud9ePatw8BKaFGbmcsMYhtYk\",\"createdAt\":1408557296116,\"timestamp\":1408557296116,\"type\":\"checkins\",\"user\":\"UAteE6yp8VpRNbwFhkFN8hHp\",\"location\":{\"latitude\":51.5142,\"longitude\":-0.0931,\"position\":{\"type\":\"Point\",\"coordinates\":[-0.0931,51.5142]}},\"locationSource\":\"geoIp\",\"thng\":\"UUQBkCsyPBKa2GSGys6hErWf\",\"product\":\"UdQehq9ePVKRkmbmyPMYENdg\"}]";
+
+	if (strcmp(jsonInResponse,jsonInResponse2) == 0)
+	{
+		_dbgwrite("\r\nStrings equal\r\n");
+	}
+	
+	_dbgwrite("\r\nParsed JSON\r\n");
+	_dbgwrite(jsonInResponse);
+	_dbgwrite("\r\nParsed JSON\r\n");
+	
+	cJSON *json = cJSON_Parse(jsonInResponse);	
+	if (!json){
+		char *error = (char*)cJSON_GetErrorPtr();
+		_dbgwrite("\n\r An error was encountered: ");
+		_dbgwrite(error);
+	}
+	else{
+		cJSON *item = cJSON_GetArrayItem(json,0);
+		cJSON *actionType = cJSON_GetObjectItem(item,"type");
+		cJSON *thng = cJSON_GetObjectItem(item,"thng");
+		cJSON *locationSource = cJSON_GetObjectItem(item,"locationSource");
+		
+		action->type = print_string_ptr(actionType->valuestring);
+		action->thng = print_string_ptr(thng->valuestring);
+		action->locationSource = print_string_ptr(locationSource->valuestring);
+	}	
+	
+	cJSON_Delete(json);
 }
 
 char * serializeAction(Action * action)

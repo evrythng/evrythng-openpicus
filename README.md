@@ -5,7 +5,19 @@ With the EVRYTHNG API wrapper for Open Picus you can easily integrate the EVRYTH
 
 ## Installation ##
 
-To use the wrapper, add the content of openpicus-evrythng-libs to your project as external libraries
+To use the wrapper, add the content of openpicus-evrythng-libs to your project as external libraries.
+
+### Services Selection ###
+
+From the Open Picus Services (configured through the network wizard in the IDE) you must include at least the following:
+- DHCP Client
+- RTCC library
+- SNTP Client
+
+
+### SSL ###
+
+The library uses SSL to communicate with the EVRYTHNG API. Remember to configure your Open Picus project to support SSL. [SSL Configuration](http://wiki.openpicus.com/index.php/Secure_Sockets_Layer_(SSL))
 
 ### Included libraries ###
 
@@ -42,7 +54,7 @@ Property property;
 	
 int responseCode = evt_GetPropertyValue("YOUR API KEY", "YOUR THNG ID", "YOUR PROPERTY NAME", &property);
 	
-if (responseCode != 200)
+if (responseCode == 200)
 {
     //Property was read successfully, values can be read from the property struct
 }
@@ -61,7 +73,7 @@ property.timestamp = atof(getTimeStamp());
 	
 int responseCode = evt_UpdatePropertyValue("YOUR API KEY", "YOUR THNG ID", "YOUR PROPERTY NAME", &property);
 	
-if (responseCode != 200)
+if (responseCode == 200)
 {
     //Property was updated successfully
 }
@@ -87,7 +99,7 @@ checkinAction.thng = "YOUR THNG ID";
 
 int responseCode = evt_PostAction("YOUR API KEY", &checkinAction);
 
-if (responseCode != 201)
+if (responseCode == 201)
 {
     //Action was posted successfully
 }
@@ -96,6 +108,25 @@ else
     //Check response code for error
 }
 ```
+### Get last action on Thngs ###
+Retrieves the last action performed on a thng.
+
+```c
+Action lastAction;
+lastAction.thng = "YOUR THNG ID";
+	
+int responseCode = evt_GetLastAction(API_KEY, &lastAction);
+
+if (responseCode == 200)
+{
+     //Action was read successfully, values can be read from the action struct
+}
+else
+{
+    //Check response code for error
+}
+```
+
 ----------
 ## Test application ##
 

@@ -16,7 +16,7 @@
 TCP_SOCKET socket = INVALID_SOCKET;
 
 char respHeader[550];
-char respBody[500];
+char respBody[550];
 
 /**
 * Internal utils
@@ -29,20 +29,19 @@ static void connect()
 	socket = TCPClientOpen(EVRYTHNG_API_HOST, EVRYTHNG_API_PORT);	
 	while(!TCPisConn(socket))
     {
-		vTaskDelay(15);
+		vTaskDelay(30);
 		_dbgwrite(".");
     }
 	_dbgwrite("\r\nTCP connection OK\r\n");
+		
+	TCPSSLStart(socket);
+	char buff[100];
+	sprintf(buff, "SSL stat: %d\r\n", TCPSSLStatus(socket));
+	_dbgwrite(buff);
+	while(TCPSSLStatus(socket) == 1);
+	sprintf(buff, "SSL stat: %d\r\n", TCPSSLStatus(socket));		
+	_dbgwrite(buff);
 	
-	/*
-		TCPSSLStart(socket);
-		vTaskDelay(15);
-		char buff[100];
-		sprintf(buff, "SSL stat: %d\r\n", TCPSSLStatus(socket));
-		_dbgwrite(buff);
-		while(TCPSSLStatus(socket) == 1);
-		sprintf(buff, "SSL stat: %d\r\n", TCPSSLStatus(socket));
-	*/
 }
 
 static void disconnect()
@@ -76,7 +75,7 @@ char* createHeader_BL(char*apikey){
 
 char* createHeader_ContentType(char*apikey, char*contentType){
 	char * header = malloc(strlen(AUTHORIZATION_HEADER_KEY)+strlen(apikey)+strlen(CONTENT_TYPE_HEADER_KEY)+strlen(contentType)+5);
-	sprintf(header, "%s%s\n\r%s%s\r\n", AUTHORIZATION_HEADER_KEY, apikey, CONTENT_TYPE_HEADER_KEY,contentType);
+	sprintf(header, "%s%s\r\n%s%s\r\n", AUTHORIZATION_HEADER_KEY, apikey, CONTENT_TYPE_HEADER_KEY,contentType);
 	return header;
 }
 
@@ -98,6 +97,12 @@ char* createPostActionURLPath(char* actionType){
 	return url;
 }
 
+char* createGetLastActionURLPath(char * thngId){
+	char * url = malloc(strlen(LAST_ACTION_PATH)+strlen(thngId)+1);
+	sprintf(url, "%s%s", LAST_ACTION_PATH, thngId);
+	return url;
+}
+
 int evt_GetPropertyValue(char* apikey, char* thngId, char* propertyName, Property *property)
 {
 	connect();
@@ -108,7 +113,7 @@ int evt_GetPropertyValue(char* apikey, char* thngId, char* propertyName, Propert
 	int responseCode = HTTP_Get(socket, EVRYTHNG_API_HOST, urlPath, header, respHeader, ARRAY_SIZE(respHeader), respBody, ARRAY_SIZE(respBody),200);
 	
 	printResponse();
-	
+
 	if (responseCode == 200)
 	{
 		parseProperty(property, respBody);
@@ -130,13 +135,12 @@ int evt_UpdatePropertyValue(char* apikey, char* thngId, char* propertyName, Prop
 	char * jsonString = serializeProperty(property);
 	
 	int responseCode = HTTP_Put(socket, EVRYTHNG_API_HOST, urlPath, header, jsonString, respHeader, ARRAY_SIZE(respHeader), respBody, ARRAY_SIZE(respBody),200);
-	
 	printResponse();
-	
-	disconnect();
+
+	disconnect();	
 	free(jsonString);
-	free(header);
 	free(urlPath);
+	free(header);
 	
 	return responseCode;	
 };
@@ -158,4 +162,27 @@ int evt_PostAction(char* apikey, Action * action)
 	free(header);
 	
 	return responseCode;
+}
+
+int evt_GetLastAction(char*apikey, Action * action)
+{
+	connect();
+	
+	char * urlPath = createGetLastActionURLPath(action->thng);
+	char * header = createHeader(apikey);
+	
+	int responseCode = HTTP_Get(socket, EVRYTHNG_API_HOST, urlPath, header, respHeader, ARRAY_SIZE(respHeader), respBody, ARRAY_SIZE(respBody),200);
+	
+	printResponse();
+
+	if (responseCode == 200)
+	{
+		parseAction(action, respBody);
+	}
+
+	disconnect();
+	free(urlPath);
+	free(header);
+	
+	return responseCode;	
 }
