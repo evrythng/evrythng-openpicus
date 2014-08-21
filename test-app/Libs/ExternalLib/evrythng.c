@@ -58,51 +58,52 @@ static void printResponse()
 	_dbgwrite("\n\r");
 }
 
-/**
-* EVT interface
-*/
-char* createHeader(char*apikey){
+
+static char* createHeader(char*apikey){
 	char * header = malloc(strlen(AUTHORIZATION_HEADER_KEY)+strlen(apikey)+1);	
 	sprintf(header, "%s%s", AUTHORIZATION_HEADER_KEY, apikey);
 	return header;
 }
 
-char* createHeader_BL(char*apikey){
+static  char* createHeader_BL(char*apikey){
 	char * header = malloc(strlen(AUTHORIZATION_HEADER_KEY)+strlen(apikey)+3);	
 	sprintf(header, "%s%s\r\n", AUTHORIZATION_HEADER_KEY, apikey);
 	return header;
 }
 
-char* createHeader_ContentType(char*apikey, char*contentType){
+static char* createHeader_ContentType(char*apikey, char*contentType){
 	char * header = malloc(strlen(AUTHORIZATION_HEADER_KEY)+strlen(apikey)+strlen(CONTENT_TYPE_HEADER_KEY)+strlen(contentType)+5);
 	sprintf(header, "%s%s\r\n%s%s\r\n", AUTHORIZATION_HEADER_KEY, apikey, CONTENT_TYPE_HEADER_KEY,contentType);
 	return header;
 }
 
-char* createGetPropertyURLPath(char* thngId, char* propertyName){
+static char* createGetPropertyURLPath(char* thngId, char* propertyName){
 	char * url = malloc(strlen(THNGS_PATH)+strlen(thngId)+strlen(PROPERTIES_PATH)+strlen(propertyName)+strlen(FROM_LATEST)+1);
 	sprintf(url, "%s%s%s%s%s", THNGS_PATH, thngId, PROPERTIES_PATH, propertyName, FROM_LATEST);	
 	return url;
 };
 
-char* createUpdatePropertyURLPath(char* thngId, char* propertyName){
+static char* createUpdatePropertyURLPath(char* thngId, char* propertyName){
 	char * url = malloc(strlen(THNGS_PATH)+strlen(thngId)+strlen(PROPERTIES_PATH)+strlen(propertyName)+1);
 	sprintf(url, "%s%s%s%s", THNGS_PATH, thngId, PROPERTIES_PATH, propertyName);
 	return url;
 };
 
-char* createPostActionURLPath(char* actionType){
+static char* createPostActionURLPath(char* actionType){
 	char * url = malloc(strlen(ACTIONS_PATH)+strlen(actionType)+1);
 	sprintf(url, "%s%s", ACTIONS_PATH, actionType);
 	return url;
 }
 
-char* createGetLastActionURLPath(char * thngId){
+static char* createGetLastActionURLPath(char * thngId){
 	char * url = malloc(strlen(LAST_ACTION_PATH)+strlen(thngId)+1);
 	sprintf(url, "%s%s", LAST_ACTION_PATH, thngId);
 	return url;
 }
 
+/**
+* EVT interface
+*/
 int evt_GetPropertyValue(char* apikey, char* thngId, char* propertyName, Property *property)
 {
 	connect();
@@ -112,8 +113,6 @@ int evt_GetPropertyValue(char* apikey, char* thngId, char* propertyName, Propert
 	
 	int responseCode = HTTP_Get(socket, EVRYTHNG_API_HOST, urlPath, header, respHeader, ARRAY_SIZE(respHeader), respBody, ARRAY_SIZE(respBody),200);
 	
-	printResponse();
-
 	if (responseCode == 200)
 	{
 		parseProperty(property, respBody);
@@ -135,8 +134,7 @@ int evt_UpdatePropertyValue(char* apikey, char* thngId, char* propertyName, Prop
 	char * jsonString = serializeProperty(property);
 	
 	int responseCode = HTTP_Put(socket, EVRYTHNG_API_HOST, urlPath, header, jsonString, respHeader, ARRAY_SIZE(respHeader), respBody, ARRAY_SIZE(respBody),200);
-	printResponse();
-
+	
 	disconnect();	
 	free(jsonString);
 	free(urlPath);
@@ -154,7 +152,6 @@ int evt_PostAction(char* apikey, Action * action)
 	char * jsonString = serializeAction(action);
 		
 	int responseCode = HTTP_Post(socket, EVRYTHNG_API_HOST, urlPath, header, "application/json", jsonString, respHeader, ARRAY_SIZE(respHeader), respBody, ARRAY_SIZE(respBody),200); 
-	printResponse();
 	
 	disconnect();
 	free(jsonString);
@@ -173,8 +170,6 @@ int evt_GetLastAction(char*apikey, Action * action)
 	
 	int responseCode = HTTP_Get(socket, EVRYTHNG_API_HOST, urlPath, header, respHeader, ARRAY_SIZE(respHeader), respBody, ARRAY_SIZE(respBody),200);
 	
-	printResponse();
-
 	if (responseCode == 200)
 	{
 		parseAction(action, respBody);

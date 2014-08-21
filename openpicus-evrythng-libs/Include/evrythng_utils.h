@@ -3,10 +3,10 @@
 
 #include "evrythng.h"
 
-void parseProperty(Property * property, char* response);
-char* findJsonInResponseStr(char* str);
-
 char * serializeProperty(Property * property);
+void parseProperty(Property * property, char* response);
+
 char * serializeAction(Action * action);
+void parseAction(Action * action, char* response);
 
 #endif

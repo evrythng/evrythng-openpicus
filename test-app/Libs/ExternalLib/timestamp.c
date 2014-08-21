@@ -13,10 +13,10 @@ struct tm mytime;
 // to properly set GMT by adding or removing
 // the hours for GMT zone (for example Rome = +1 or +2 GMT)
 // negative values are supported too...
-int GMT_hour_adding = 0;
+int GMT_hour_adding = 1;
 
 void initializeTime()
-{
+{  
   while(epoch<epochtime)
   {
     vTaskDelay(50);
@@ -44,9 +44,9 @@ void initializeTime()
 };
 
 char* getTimeStamp()
-{
-     RTCCGet(&mytime);//get actual data/time
+{        
+	 RTCCGet(&mytime);//get actual data/time
 	 time_t timeSinceEpoch = mktime(&mytime);
-	 sprintf(epochString, "%ld", timeSinceEpoch);
+	 sprintf(epochString, "%ld000", timeSinceEpoch);
 	 return epochString;
 };

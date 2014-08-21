@@ -26,35 +26,11 @@ typedef struct {
 	char* value;
 } Property;
 
-/*
-?createThng=<Boolean> (applies only for thng actions, default: false, access private)
-{
---*"type": <ActionType>,
---*"locationSource": "sensor"|"place"|"geoIp"|"unknown",
---"timestamp": <timestamp>,
---"location": {
-----"place": <Ref>,
-----"position": <GeoJSON:Point>,
-----"latitude": <Double>, // (deprecated)
-----"longitude": <Double> // (deprecated)
---},
---"device": <String>,
---"context": {},
---"customFields":<CustomFields>
-}
-*/
 typedef struct {
 	char* type;
 	char* locationSource;
 	char* thng;
 } Action;
-
-char * createHeader(char*apikey);
-char * createHeader_ContentType(char*apikey, char*contentType);
-
-char * createGetPropertyURLPath(char* thngId, char* propertyName);
-char * createUpdatePropertyURLPath(char* thngId, char* propertyName);
-char * createPostActionURLPath(char* actionType);
 
 int evt_GetPropertyValue(char* apikey, char* thngId, char* propertyName, Property * value);
 int evt_UpdatePropertyValue(char* apikey, char* thngId, char* propertyName, Property * value);

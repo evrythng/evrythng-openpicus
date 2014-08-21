@@ -12,7 +12,7 @@
 #include <limits.h>
 #include <ctype.h>
 
-void findJsonInResponseStr(char* jsonInResponse, const char* str) {
+static void findJsonInResponseStr(char* jsonInResponse, const char* str) {
 	size_t pos;
 	size_t beginCharsIndex;
 	size_t endCharsIndex;
@@ -52,7 +52,6 @@ void findJsonInResponseStr(char* jsonInResponse, const char* str) {
 		
 	if (foundStart && foundEnd){
 		int length = trimEnd - trimStart + 1;		
-		//char * subbuff = (char*)malloc(sizeof(char)*length + 100);
 		strncpy(jsonInResponse, &str[trimStart], length);
 		jsonInResponse[length] = '\0';
 	}   
@@ -157,9 +156,6 @@ char *print_number_value(cJSON *item)
 	return str;
 }
 
-/* Invote print_string_ptr (which is useful) on an item. */
-//static char *print_string(cJSON *item)	{return print_string_ptr(item->valuestring);}
-
 void parseProperty(Property * property, char* response)
 {
 	char jsonInResponse[strlen(response)];
@@ -196,16 +192,7 @@ void parseAction(Action * action, char* response){
 
 	char jsonInResponse[strlen(response)];
 	findJsonInResponseStr(jsonInResponse, response);
-	char jsonInResponse2[500] = "[{\"id\":\"Ud9ePatw8BKaFGbmcsMYhtYk\",\"createdAt\":1408557296116,\"timestamp\":1408557296116,\"type\":\"checkins\",\"user\":\"UAteE6yp8VpRNbwFhkFN8hHp\",\"location\":{\"latitude\":51.5142,\"longitude\":-0.0931,\"position\":{\"type\":\"Point\",\"coordinates\":[-0.0931,51.5142]}},\"locationSource\":\"geoIp\",\"thng\":\"UUQBkCsyPBKa2GSGys6hErWf\",\"product\":\"UdQehq9ePVKRkmbmyPMYENdg\"}]";
-
-	if (strcmp(jsonInResponse,jsonInResponse2) == 0)
-	{
-		_dbgwrite("\r\nStrings equal\r\n");
-	}
-	
-	_dbgwrite("\r\nParsed JSON\r\n");
-	_dbgwrite(jsonInResponse);
-	_dbgwrite("\r\nParsed JSON\r\n");
+	//char jsonInResponse2[500] = "[{\"id\":\"Ud9ePatw8BKaFGbmcsMYhtYk\",\"createdAt\":1408557296116,\"timestamp\":1408557296116,\"type\":\"checkins\",\"user\":\"UAteE6yp8VpRNbwFhkFN8hHp\",\"location\":{\"latitude\":51.5142,\"longitude\":-0.0931,\"position\":{\"type\":\"Point\",\"coordinates\":[-0.0931,51.5142]}},\"locationSource\":\"geoIp\",\"thng\":\"UUQBkCsyPBKa2GSGys6hErWf\",\"product\":\"UdQehq9ePVKRkmbmyPMYENdg\"}]";
 	
 	cJSON *json = cJSON_Parse(jsonInResponse);	
 	if (!json){

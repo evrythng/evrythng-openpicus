@@ -90,7 +90,7 @@ void cJSON_Delete(cJSON *c)
 /* Parse the input text to generate a number, and populate the result into item. */
 static const char *parse_number(cJSON *item,const char *num)
 {
-	double n=0,sign=1,scale=0;int subscale=0,signsubscale=1;
+	long double n=0,sign=1,scale=0;int subscale=0,signsubscale=1;
 
 	/* Could use sscanf for this? */
 	if (*num=='-') sign=-1,num++;	/* Has sign? */
@@ -114,8 +114,8 @@ static const char *parse_number(cJSON *item,const char *num)
 static char *print_number(cJSON *item)
 {
 	char *str;
-	double d=item->valuedouble;
-	if (fabs(((double)item->valueint)-d)<=DBL_EPSILON && d<=INT_MAX && d>=INT_MIN)
+	long double d=item->valuedouble;
+	if (fabs(((long double)item->valueint)-d)<=DBL_EPSILON && d<=INT_MAX && d>=INT_MIN)
 	{
 		str=(char*)cJSON_malloc(21);	/* 2^64+1 can be represented in 21 chars. */
 		if (str) sprintf(str,"%d",item->valueint);
@@ -125,9 +125,9 @@ static char *print_number(cJSON *item)
 		str=(char*)cJSON_malloc(64);	/* This is a nice tradeoff. */
 		if (str)
 		{
-			if (fabs(floor(d)-d)<=DBL_EPSILON)			sprintf(str,"%.0f",d);
-			else if (fabs(d)<1.0e-6 || fabs(d)>1.0e9)	sprintf(str,"%e",d);
-			else										sprintf(str,"%f",d);
+			if (fabs(floor(d)-d)<=DBL_EPSILON)			sprintf(str,"%.0Lf",d);
+			else if (fabs(d)<1.0e-6 || fabs(d)>1.0e9)	sprintf(str,"%Le",d);
+			else										sprintf(str,"%Lf",d);
 		}
 	}
 	return str;
@@ -307,7 +307,11 @@ static const char *parse_array(cJSON *item,const char *value)
 
 	item->child=child=cJSON_New_Item();
 	if (!item->child) return 0;		 /* memory fail */
-	value=skip(parse_value(child,skip(value)));	/* skip any spacing, get the value. */
+	
+	value = parse_value(child,skip(value));
+	
+	value=skip(value);	/* skip any spacing, get the value. */
+
 	if (!value) return 0;
 
 	while (*value==',')
@@ -508,7 +512,7 @@ cJSON *cJSON_CreateNull()						{cJSON *item=cJSON_New_Item();if(item)item->type=
 cJSON *cJSON_CreateTrue()						{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_True;return item;}
 cJSON *cJSON_CreateFalse()						{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_False;return item;}
 cJSON *cJSON_CreateBool(int b)					{cJSON *item=cJSON_New_Item();if(item)item->type=b?cJSON_True:cJSON_False;return item;}
-cJSON *cJSON_CreateNumber(double num)			{cJSON *item=cJSON_New_Item();if(item){item->type=cJSON_Number;item->valuedouble=num;item->valueint=(int)num;}return item;}
+cJSON *cJSON_CreateNumber(long double num)			{cJSON *item=cJSON_New_Item();if(item){item->type=cJSON_Number;item->valuedouble=num;item->valueint=(int)num;}return item;}
 cJSON *cJSON_CreateString(const char *string)	
 {
 	cJSON *item=cJSON_New_Item();
@@ -537,5 +541,5 @@ cJSON *cJSON_CreateObject()
 /* Create Arrays: */
 cJSON *cJSON_CreateIntArray(int *numbers,int count)				{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}
 cJSON *cJSON_CreateFloatArray(float *numbers,int count)			{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}
-cJSON *cJSON_CreateDoubleArray(double *numbers,int count)		{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}
+cJSON *cJSON_CreateDoubleArray(long double *numbers,int count)		{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}
 cJSON *cJSON_CreateStringArray(const char **strings,int count)	{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateString(strings[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}

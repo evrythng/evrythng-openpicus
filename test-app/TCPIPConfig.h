@@ -72,7 +72,7 @@
 //#define STACK_USE_HTTP_SERVER			// Old HTTP server
 //#define STACK_USE_HTTP2_SERVER			// New HTTP server with POST, Cookies, Authentication, etc.
 //#define STACK_USE_SSL_SERVER			// SSL server socket support (Requires SW300052)
-//#define STACK_USE_SSL_CLIENT			// SSL client socket support (Requires SW300052)
+#define STACK_USE_SSL_CLIENT			// SSL client socket support (Requires SW300052)
 //#define STACK_USE_AUTO_IP               // Dynamic link-layer IP address automatic configuration protocol
 #define STACK_USE_DHCP_CLIENT			// Dynamic Host Configuration Protocol client for obtaining IP address and other parameters
 #define STACK_USE_DHCP_SERVER			// Single host DHCP server

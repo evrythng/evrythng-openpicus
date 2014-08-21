@@ -309,9 +309,7 @@ static const char *parse_array(cJSON *item,const char *value)
 	if (!item->child) return 0;		 /* memory fail */
 	
 	value = parse_value(child,skip(value));
-	_dbgwrite("\r\nParse Array c\r\n");
-	_dbgwrite(value);
-
+	
 	value=skip(value);	/* skip any spacing, get the value. */
 
 	if (!value) return 0;

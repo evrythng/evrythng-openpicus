@@ -6,14 +6,13 @@
 #include <string.h>
 #include <time.h>
 
-//test env conf
+//TEST ENVIRONMENT CONFIGURATION
 #define API_KEY "Y2LQJ4i0PlGXP6cmQnDiODDhKmLdrr5wsVxmHiz1RWLpSBHAN6wo382w5NX9nYxSxxLOoPxN2gx2UlLt"
 #define THNG_ID "UUQBkCsyPBKa2GSGys6hErWf"
-#define PROPERTY_TO_READ "read"
-#define PROPERTY_TO_UPDATE "update"
+#define PROPERTY_NAME "update"
 
-const char EXPECTED_PROPERTY_VALUE [] = "10";
-long double EXPECTED_PROPERTY_TIMESTAMP = 1408534003255;
+#define EXPECTED_PROPERTY_VALUE "15"
+long double EXPECTED_PROPERTY_TIMESTAMP = 0;
 
 #define TEST_NUMBER 4
 char testResults[TEST_NUMBER][150];
@@ -49,7 +48,7 @@ void assertEqualsString(char* message, char* expected, char * actual)
 	}
 	else{
 		char failMessage[50];
-		sprintf(failMessage, "Value mismatch, expected %s , found %s", expected, actual);		
+		sprintf(failMessage, "Values mismatch, expected %s , found %s", expected, actual);		
 		fail(failMessage);				
 	}
 }
@@ -58,7 +57,7 @@ void assertEqualsInteger(char*message, int expected, int actual)
 	if (expected != actual)
 	{
 		char message[50];
-		sprintf(message, "Unexpected response code, expected %d , found %d", expected, actual);
+		sprintf(message, "Values mismatch, expected %d , found %d", expected, actual);
 		fail(message);				
 	}
 	else{
@@ -70,7 +69,7 @@ void assertEqualsDouble(char*message, long double expected, long double actual)
 	if (expected != actual)
 	{
 		char message[50];
-		sprintf(message, "Unexpected response code, expected %Lf , found %Lf", expected, actual);
+		sprintf(message, "Values mismatch,, expected %Lf , found %Lf", expected, actual);
 		fail(message);				
 	}
 	else{
@@ -91,29 +90,30 @@ void printResults()
 *	TEST CASES
 */
 
-void test_evt_GetPropertyValue()
-{
-	before("GetPropertyValue");
-	
-	Property property;
-	int responseCode = evt_GetPropertyValue(API_KEY, THNG_ID, PROPERTY_TO_READ,&property);
-	
-	assertEqualsInteger("Response code OK", 200, responseCode);
-	assertEqualsDouble("Timestamp OK", EXPECTED_PROPERTY_TIMESTAMP, property.timestamp);
-	assertEqualsString("Value OK", EXPECTED_PROPERTY_VALUE, property.value);	
-}
-
 void test_evt_UpdatePropertyValue()
 {
 	before("UpdatePropetyValue");
 	
 	Property property;
-	property.value = "10";
+	property.value = EXPECTED_PROPERTY_VALUE;
 	property.timestamp = atof(getTimeStamp());
+	EXPECTED_PROPERTY_TIMESTAMP = property.timestamp;
 	
-	int responseCode = evt_UpdatePropertyValue(API_KEY, THNG_ID, PROPERTY_TO_UPDATE, &property);
+	int responseCode = evt_UpdatePropertyValue(API_KEY, THNG_ID, PROPERTY_NAME, &property);
 		
 	assertEqualsInteger("Response code OK", 200, responseCode);	
+}
+
+void test_evt_GetPropertyValue()
+{
+	before("GetPropertyValue");
+	
+	Property property;
+	int responseCode = evt_GetPropertyValue(API_KEY, THNG_ID, PROPERTY_NAME,&property);
+	
+	assertEqualsInteger("Response code OK", 200, responseCode);
+	assertEqualsDouble("Timestamp OK", EXPECTED_PROPERTY_TIMESTAMP, property.timestamp);
+	assertEqualsString("Value OK", EXPECTED_PROPERTY_VALUE, property.value);	
 }
 
 void test_evt_PostAction(){
@@ -144,23 +144,6 @@ void test_evt_GetLastAction(){
 	assertEqualsString("locationSource OK", LOCATION_TYPE_GEOIP, lastAction.locationSource);	
 }
 
-void test_findJsonInResponseStr()
-{
-	before("TrimResponse");
-	
-	char message[20] = "12{hello}0";
-	char * messageTrimmed = findJsonInResponseStr(message);
-	assertEqualsString("Message with curly braces OK", "{hello}", messageTrimmed);	
-	
-	char message2[20] = "12[{hello}]0";
-	char * message2Trimmed = findJsonInResponseStr(message2);
-	assertEqualsString("Message with brackets OK", "[{hello}]", message2Trimmed);	
-	
-	char message3[20] = "12[{he[l]lo}]0";
-	char * message3Trimmed = findJsonInResponseStr(message3);
-	assertEqualsString("Message with nested brackets OK", "[{he[l]lo}]", message3Trimmed);		
-}
-
 void connectToWifi()
 {
 	vTaskDelay(20); 
@@ -171,16 +154,18 @@ void connectToWifi()
 }
 
 void FlyportTask()
-{
+{		
 	connectToWifi();
+	
+	initializeTime();
 
 	_dbgwrite("\r\nSTARTING TESTS\r\n");
-	
-	test_evt_GetPropertyValue();
-	vTaskDelay(500);
-	
+
 	test_evt_UpdatePropertyValue();
 	vTaskDelay(500);
+
+	test_evt_GetPropertyValue();
+	vTaskDelay(500);	
 	
 	test_evt_PostAction();
 	vTaskDelay(500);
@@ -194,4 +179,3 @@ void FlyportTask()
 	
 	while(1);
 };
-
