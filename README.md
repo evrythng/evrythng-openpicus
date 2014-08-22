@@ -1,7 +1,7 @@
-EVRYTHNG API - OpenPicus Flyport Wrapper
+EVRYTHNG API - OpenPicus Flyport integration.
 =============================================================
 
-The EVRYTHNG API wrapper for Open Picus makes it easier to integrate some of the basic functionality of the EVRYTHNG platform in your Open Picus applications!
+With the EVRYTHNG API wrapper for Open Picus you can easily integrate the EVRYTHNG platform in your Open Picus applications!
 
 ## Installation ##
 
@@ -47,13 +47,25 @@ More info about the full API and response codes can be found here: https://dev.e
 
 Currently we support the following functionality out of the box:
 
+### Timestamps ###
+To be able to use timestamps in the format needed by the EVRYTHNG engine (epoch milliseconds), you need to initialize first the timestamp library. Just call the initializeTime method with a parameter defining how many hours to add to the GMT +0 standard zone (summer time should be considered too). You need to do this only once.
+```c
+//To configure GMT+1 zone
+int GMT_add_hours = 1;
+
+initializeTime(GMT_add_hours);
+
+//API CALLS
+....
+```
+
 ### Get Properties of Thngs ###
 Retrieves the last update of a property value of a Thng.
 ```c
 Property property;
-	
+    
 int responseCode = evt_GetPropertyValue("YOUR API KEY", "YOUR THNG ID", "YOUR PROPERTY NAME", &property);
-	
+    
 if (responseCode == 200)
 {
     //Property was read successfully, values can be read from the property struct
@@ -70,9 +82,9 @@ Updates a property value of a Thng.
 Property property;
 property.value = "10";
 property.timestamp = atof(getTimeStamp());
-	
+    
 int responseCode = evt_UpdatePropertyValue("YOUR API KEY", "YOUR THNG ID", "YOUR PROPERTY NAME", &property);
-	
+    
 if (responseCode == 200)
 {
     //Property was updated successfully
@@ -114,12 +126,12 @@ Retrieves the last action performed on a thng.
 ```c
 Action lastAction;
 lastAction.thng = "YOUR THNG ID";
-	
+    
 int responseCode = evt_GetLastAction(API_KEY, &lastAction);
 
 if (responseCode == 200)
 {
-     //Action was read successfully, values can be read from the action struct
+    //Action was read successfully, values can be read from the action struct
 }
 else
 {

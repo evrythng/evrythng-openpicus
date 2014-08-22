@@ -7,13 +7,14 @@
 #include <time.h>
 
 //TEST ENVIRONMENT CONFIGURATION
-#define API_KEY "Y2LQJ4i0PlGXP6cmQnDiODDhKmLdrr5wsVxmHiz1RWLpSBHAN6wo382w5NX9nYxSxxLOoPxN2gx2UlLt"
-#define THNG_ID "UUQBkCsyPBKa2GSGys6hErWf"
-#define PROPERTY_NAME "update"
+#define API_KEY "YOUR_API_KEY"
+#define THNG_ID "YOUR_THNG_ID"
+#define PROPERTY_NAME "YOUR_PROPERTY_NAME"
 
 #define EXPECTED_PROPERTY_VALUE "15"
 long double EXPECTED_PROPERTY_TIMESTAMP = 0;
 
+//SET THIS CORRECTLY - NUMBER OF TESTS RUNNING
 #define TEST_NUMBER 4
 char testResults[TEST_NUMBER][150];
 int testNumber = 0;
@@ -157,7 +158,8 @@ void FlyportTask()
 {		
 	connectToWifi();
 	
-	initializeTime();
+	//Initialize GMT +1 hour
+	initializeTime(1);
 
 	_dbgwrite("\r\nSTARTING TESTS\r\n");
 

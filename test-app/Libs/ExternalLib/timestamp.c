@@ -13,10 +13,12 @@ struct tm mytime;
 // to properly set GMT by adding or removing
 // the hours for GMT zone (for example Rome = +1 or +2 GMT)
 // negative values are supported too...
-int GMT_hour_adding = 1;
+int GMT_hour_adding = 0;
 
-void initializeTime()
+void initializeTime(int GMT_zone)
 {  
+  GMT_hour_adding = GMT_zone;
+	
   while(epoch<epochtime)
   {
     vTaskDelay(50);

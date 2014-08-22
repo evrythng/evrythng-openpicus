@@ -2,6 +2,6 @@
 #define __EVRYTHNG_TIMESTAMP_H_
 
 char* getTimeStamp();
-void initializeTime();
+void initializeTime(int GMT_hour_adding);
 
 #endif /* __EVRYTHNG_API_H_ */

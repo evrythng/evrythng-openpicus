@@ -1,7 +1,7 @@
 #ifndef __EVRYTHNG_API_H_
 #define __EVRYTHNG_API_H_
 
-#define EVRYTHNG_API_HOST "api-test.evrythng.net" 
+#define EVRYTHNG_API_HOST "api.evrythng.com" 
 #define EVRYTHNG_API_PORT "443"
 
 #define THNGS_PATH "/thngs/"
