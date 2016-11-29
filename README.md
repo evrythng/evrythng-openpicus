@@ -43,7 +43,7 @@ The library uses SSL to communicate with the EVRYTHNG API. Remember to configure
 
 The EVRYTHNG wrapper for Open Picus is based on a set of structures and functions that let you invoke the EVRYTHNG engine API easily from the Open Picus code.
 
-More info about the full API and response codes can be found here: https://dev.evrythng.com/documentation/api
+More info about the full API and response codes can be found [here](https://developers.evrythng.com/docs/evrythng-developer-resources).
 
 Currently we support the following functionality out of the box:
 
